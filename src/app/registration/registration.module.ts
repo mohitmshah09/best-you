@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { LandingPagePage } from './landing-page/landing-page.page';
 
 
 
@@ -19,6 +18,14 @@ import { LandingPagePage } from './landing-page/landing-page.page';
       {
         path: 'landing-page',
         loadChildren: () => import('./landing-page/landing-page.module').then(m => m.LandingPagePageModule)
+      },
+      {
+        path: 'sign-up',
+        loadChildren: () => import('./sign-up/sign-up.module').then( m => m.SignUpPageModule)
+      },
+      {
+        path: 'login',
+        loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
       },
     ])
   ]

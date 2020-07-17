@@ -14,7 +14,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'registration',
     pathMatch: 'full'
-  },
+  }
+  
 ];
 @NgModule({
   imports: [

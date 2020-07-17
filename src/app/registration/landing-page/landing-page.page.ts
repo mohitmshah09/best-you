@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPagePage implements OnInit {
 
+  slideOpts={
+    speed: 300
+  }
   constructor() { }
 
   ngOnInit() {

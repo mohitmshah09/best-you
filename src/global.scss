@@ -1,13 +1,13 @@
 /*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+* App Global CSS
+* ----------------------------------------------------------------------------
+* Put style rules here that you want to apply globally. These styles are for
+* the entire app and not just one component. Additionally, this file can be
+* used as an entry point to import other CSS/Sass files to be included in the
+* output CSS.
+* For more information on global stylesheets, visit the documentation:
+* https://ionicframework.com/docs/layout/global-stylesheets
+*/
 
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
@@ -29,18 +29,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap');
 
 
+:root{
+	--button-color:#00E8B2;
+}
+
 .slider-img{
 	.swiper-pagination-bullet{
-	    background: white!important;
-    opacity: 1;
-      height: 5px;
-    width: 5px;
-    margin: 1px 2px !important;
+		background: white!important;
+		opacity: 1;
+		height: 5px;
+		width: 5px;
+		margin: 1px 2px !important;
 	}
 	.swiper-pagination-bullet-active{
-	background:#777885 !important;
-	   height: 7px;
-    width: 7px;
-    margin: 0 2px !important;
+		background:#777885 !important;
+		height: 7px;
+		width: 7px;
+		margin: 0 2px !important;
+	}
+	.swiper-container-horizontal>.swiper-pagination-bullets{
+		bottom: 133px;
 	}
 }

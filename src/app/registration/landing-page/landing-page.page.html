@@ -2,29 +2,37 @@
   <div class="slider-img">
     <ion-slides pager="true" [options]="slideOpts">
       <ion-slide>
-        <img src="assets/images/landing-logo.png" class="logo-img">
-        <img src="assets/images/slider-img1.png" class="slide-img">
-        <div class="heading-text">
-        <p class="first-title mb-1">The Best You Social App</p>
-        <p>Enjoy A Life Without Limits!</p>
-    </div>
+        <img src="assets/images/landing-logo.png" class="logo-img" style="left: 0;">
+        <img src="assets/images/slider-img1.png" class="slide-img" >
+        <div class="heading-text text-white">
+          <p class="first-title mb-0">The Best You Social App</p>
+          <p class="second-title">Enjoy A Life Without Limits!</p>
+        </div>
       </ion-slide>
       <ion-slide>
         <img src="assets/images/landing-logo.png" class="logo-img">
         <img src="assets/images/slider-img2.png" class="slide-img">
-         <div class="heading-text">
-        <p class="first-title mb-1">Optimize Your Performance</p>
-        <p>Enjoy A Life Without Limits!</p>
-    </div>
+        <div class="heading-text text-white">
+          <p class="first-title mb-0">Optimize Your Performance</p>
+          <p>Enjoy A Life Without Limits!</p>
+        </div>
       </ion-slide>
       <ion-slide>
         <img src="assets/images/landing-logo.png" class="logo-img">
         <img src="assets/images/slider-img3.png" class="slide-img">
-         <div class="heading-text">
-        <p class="first-title mb-1">Develop A New Way Of Thinking</p>
-        <p>Enjoy A Life Without Limits!</p>
-    </div>
+        <div class="heading-text text-white">
+          <p class="first-title mb-0">Develop A New Way Of Thinking</p>
+          <p>Enjoy A Life Without Limits!</p>
+        </div>
       </ion-slide>
     </ion-slides>
+  </div>
+  <div class="button-sec">
+    <div class="signup-btn" routerLink="/registration/sign-up">
+      <button>SIGN UP</button>
+    </div>
+    <div class="login-btn" routerLink="/registration/login">
+      <button>LOG IN</button>
+    </div>
   </div>
 </ion-content>

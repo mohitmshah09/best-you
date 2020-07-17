@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signUp</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="form-section">
+    <p class="title text-center">Enter Name and Phone</p>
 
+    <form [formGroup]="signUpForm">
+      <div>
+        <ion-item [ngStyle]="{'border-bottom':error}">
+          <ion-label position="floating">First Name</ion-label>
+          <ion-input type="text" formControlName="firstName" requried></ion-input>
+        </ion-item>
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+          <div *ngIf="f.firstName.errors.required">Required field.</div>
+        </div>
+      </div>
+      <div>
+        <ion-item>
+          <ion-label position="floating">Last Name</ion-label>
+          <ion-input type="text" formControlName="lastName"></ion-input>
+        </ion-item>
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+          <div *ngIf="f.lastName.errors.required">Required field.</div>
+        </div>
+      </div>
+      <div>
+        <ion-item>
+          <ion-label position="floating">Phone Number</ion-label>
+          <ion-input type="text" formControlName="phoneNumber"></ion-input>
+        </ion-item>
+        <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+          <div *ngIf="f.phoneNumber.errors.required">Required field.</div>
+        </div>
+      </div>
+      <p class="text-center mt-4 message">You may receive SMS updates from The Best You and can opt out at any time.</p>
+      <div class="bottom-sec">
+        <div class="buttons" (click)="next(signUpForm.value)">
+          <ion-button expand="block">Next</ion-button>
+        </div>
+        <p class="text-center mb-0 links mt-2">Already have an account? <span style="font-weight: 600;outline: none;" routerLink="/registration/login"> Log In</span>
+        </p>
+      </div>
+    </form>
+  </div>
 </ion-content>

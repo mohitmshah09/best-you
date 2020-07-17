@@ -1,0 +1,48 @@
+<ion-content>
+  <div class="form-section">
+    <p class="title text-center">Enter Code</p>
+    <div class="text-center top-sec mt-5">
+      <img src="assets/images/padlock.svg">
+      <p>Enter the 4 digits code received by text</p>
+    </div>
+    <form>
+      <div class="code-box">
+        <div class="all">
+          <!-- <div class="col-12 text-center p-0"> -->
+            <div class="input-box">
+          <ion-input #otp1 id="first" type="number" required maxLength="1" (keyup)="otpController($event,otp2,'')"
+            [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
+          </ion-input>
+        </div>
+        <div class="input-box">
+          <ion-input #otp2 id="second" type="number" required maxLength="1" (keyup)="otpController($event,otp3,otp1)"
+            [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
+          </ion-input>
+          </div>
+          <div class="input-box">
+          <ion-input #otp3 id="third" type="number" required maxLength="1" (keyup)="otpController($event,otp4,otp2)"
+            [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
+          </ion-input>
+          </div>
+          <div class="input-box">
+          <ion-input #otp4 id="fourth" type="number" required maxLength="1" (keyup)="otpController($event,'',otp3)"
+            [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
+          </ion-input>
+          </div>
+          <!-- </div> -->
+          <div *ngIf="message">
+            <span class="message-txt">{{message}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-sec">
+        <div class="buttons" (click)="next()">
+          <ion-button expand="block">Next</ion-button>
+        </div>
+        <p class="text-center mb-0 links mt-2">Resend Code
+        </p>
+      </div>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,130 @@
+/*
+* App Global CSS
+* ----------------------------------------------------------------------------
+* Put style rules here that you want to apply globally. These styles are for
+* the entire app and not just one component. Additionally, this file can be
+* used as an entry point to import other CSS/Sass files to be included in the
+* output CSS.
+* For more information on global stylesheets, visit the documentation:
+* https://ionicframework.com/docs/layout/global-stylesheets
+*/
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/*font-family*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root{
+	--button-color:#00E8B2;
+	--input-txt-color:#A5A6AF;
+	--input-border-color:#A5A6AF;
+	--form-title-color:#1E2036;
+	--error-color:#F75165;
+}
+
+.invalid-feedback{
+	display: block !important;
+	color: var(--error-color) !important;
+}
+
+// landing page slider css start here
+.slider-img{
+	.swiper-pagination-bullet{
+		background: white!important;
+		opacity: 1;
+		height: 5px;
+		width: 5px;
+		margin: 1px 2px !important;
+	}
+	.swiper-pagination-bullet-active{
+		background:#777885 !important;
+		height: 7px;
+		width: 7px;
+		margin: 0 2px !important;
+	}
+	.swiper-container-horizontal>.swiper-pagination-bullets{
+		bottom: 133px;
+	}
+}
+
+// Landing page slider css end here
+
+// Form css start here
+.form-section{
+	padding: 20px;
+	font-family: 'Mulish', sans-serif;
+	.title{
+		font-family: 'Poppins', sans-serif;
+		color: #1E2036;
+		font-size: 20px;
+	}
+	form{
+		
+		ion-item{
+			--padding-start: 0;
+			--background: transparent;
+			--border-color: #D2D2D6;
+			color:var(--form-title-color);
+			margin-bottom: 8px;
+			ion-label{
+				font-family: "Mulish", sans-serif !important;
+				font-size: 15px !important;
+				color: var(--input-txt-color) !important;
+				// margin-bottom: -7px !important;
+			}
+			ion-input{
+				color: var(--form-title-color);
+				font-size: 15px;
+				font-family: "Mulish", sans-serif;
+				--padding-bottom: 10px !important;
+				--padding-top: 10px !important;
+			}
+			
+		}
+		.item-has-focus{
+			--highlight-background:#457CAC !important;
+		}
+		.ion-invalid{
+			--highlight-background:transparent !important;
+		}
+		
+
+		.bottom-sec{
+			position: absolute;
+			right: 20px;
+			left: 20px;
+			bottom: 20px;
+			.links{
+				color:#4B4C5E;
+				font-size: 12px;
+			}
+		}
+	}
+}
+// Form css end here
+
+// Button css start here
+.buttons{
+	ion-button{
+		height: 40px;
+		--background:var(--button-color);
+		--box-shadow: none;
+		--border-radius: 6px;
+	}
+}

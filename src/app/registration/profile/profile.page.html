@@ -1,0 +1,34 @@
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Upload Profile Photo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-section">
+    <!-- <p class="title text-center">Enter Name and Phone</p> -->
+    <div>
+      <div class="profile-sec">
+        <div class="profile-img">
+          <img src="assets/images/profile.png">
+        </div>
+        <span (click)="files.click()"><img src="assets/images/pencil.svg">
+        </span>
+        <input type="file" hidden #files (change)="selectFile($event)" accept="image/*">
+      </div>
+    </div>
+    <form>
+      <div class="bottom-sec">
+        <div class="buttons" (click)="next(signUpForm.value)">
+          <ion-button expand="block">Sign up</ion-button>
+        </div>
+        <p class="text-center mb-0 links mt-2">Already have an account? <span style="font-weight: 600;outline: none;"
+           > Log In</span>
+           <!-- routerLink="/registration/login" -->
+        </p>
+      </div>
+    </form>
+  </div>
+</ion-content>

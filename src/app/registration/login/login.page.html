@@ -1,9 +1,49 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div class="form-section">
+    <p class="title text-center">Welcome to The Best You App!</p>
+    <img src="assets/images/logo.png" class="logo-img">
+    <form [formGroup]="loginForm">
+      <div>
+        <ion-item [ngStyle]="{'border-bottom':submitted &&f.phoneNumber.errors?'3px solid var(--error-color)':''}">
+          <ion-label position="floating">Phone Number</ion-label>
+          <ion-input type="text" formControlName="phoneNumber" requried></ion-input>
+        </ion-item>
+        <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+          <div *ngIf="f.phoneNumber.errors.required">Required field.</div>
+        </div>
+        <div *ngIf="submitted && !f.phoneNumber.errors"  class="invalid-feedback">
+          <div *ngIf="wrongPhnNumberMsg">{{wrongPhnNumberMsg}}</div>
+        </div>
+      </div>
+      <div class="password-input">
+        <ion-item [ngStyle]="{'border-bottom':submitted &&f.password.errors?'3px solid var(--error-color)':''}">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input [type]="passwordType" formControlName="password"></ion-input>
+          <ion-icon [name]="passwordIcon" (click)="showHide()"></ion-icon>
+        </ion-item>
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+         
+          <div *ngIf="f.password.errors.required">Required field.</div>
+        </div>
+        <div *ngIf="submitted && !f.password.errors"  class="invalid-feedback">
+          <div *ngIf="wrongPasswordMsg">{{wrongPasswordMsg}}</div>
+        </div>
+      </div>
+      <div class="remeber-sec mt-3">
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label>Remember me</ion-label>
+        <span class="ml-auto forgot-psw">Forgot password?</span>
+      </div>
+      <div class="bottom-sec">
+        <div class="buttons" (click)="login(loginForm.value)">
+          <ion-button expand="block">Log In</ion-button>
+        </div>
+        <p class="text-center mb-0 links mt-2">By continuing, you agree to our  <span style="font-weight: 600;outline: none;"> Terms of Service.</span>
+        </p>
+        <p class="text-center mb-0 links sign-link mt-2">Don’t have an account? <span style="font-weight: 600;outline: none;"
+            routerLink="/registration/login"> Sign Up</span>
+        </p>
+      </div>
+    </form>
+  </div>
 </ion-content>

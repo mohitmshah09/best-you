@@ -1,0 +1,32 @@
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Forgot password</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="form-section">
+    <img src="assets/images/forgot-psw.svg" class="forgot-img">
+    <p class="message-txt">Enter your Phone Number and we will send you a 4 digits code to reset your password.</p>
+ 
+    <form [formGroup]="forgotForm">
+      <div>
+        <ion-item [ngStyle]="{'border-bottom':submitted &&f.phoneNumber.errors?'3px solid var(--error-color)':''}">
+          <ion-label position="floating">Phone Number</ion-label>
+          <ion-input type="text" formControlName="phoneNumber"></ion-input>
+        </ion-item>
+        <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+          <div *ngIf="f.phoneNumber.errors.required">Required field.</div>
+        </div>
+      </div>
+      <div class="bottom-sec">
+        <div class="buttons" (click)="resetPsw(forgotForm.value)">
+          <ion-button expand="block">Reset Password</ion-button>
+        </div>
+      </div>
+    </form>
+ 
+  </div>
+
+</ion-content>

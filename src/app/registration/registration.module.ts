@@ -34,6 +34,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+      },
+      {
+        path: 'forgot-psw',
+        loadChildren: () => import('./forgot-psw/forgot-psw.module').then( m => m.ForgotPswPageModule)
+      },
+      {
+        path:'forgot-psw-code',
+        loadChildren:()=>import('./forgot-psw-code/forgot-psw-code.module').then(m=>m.ForgotPswCodePageModule)
       }
     ])
   ]

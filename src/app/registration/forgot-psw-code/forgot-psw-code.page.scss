@@ -1,0 +1,44 @@
+.header-md::after {
+    background-image: none !important;
+}
+
+ion-header {
+    background: #FAFAFA;
+}
+
+ion-toolbar {
+    --background: #FAFAFA;
+
+    ion-title {
+        margin-left: -27px;
+        font-family: 'Poppins', sans-serif;
+        color: #1E2036;
+        font-size: 20px;
+    }
+}
+
+.message-txt {
+    color: #777885;
+    font-size: 15px;
+}
+
+.phn-num {
+    font-weight: bold;
+}
+
+.forgot-img {
+    margin: 35px auto 20px;
+    display: block;
+    height: 70px;
+}
+
+.resend-btn {
+    margin-top: 125px;
+
+    ion-button {
+        border: 1px solid #1E2036;
+        border-radius: 6px;
+        --background:white;
+        color:#4B4C5E;
+    }
+}

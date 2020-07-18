@@ -1,0 +1,30 @@
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Forgot password</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-section">
+    <img src="assets/images/send-code.svg" class="forgot-img">
+    <div class="message-txt text-center">
+      <p class="mb-0 ">A 4 digits code has been sent to </p>
+      <p class="phn-num">+1 (999) 999-9999</p>
+    </div>
+
+    <div class="buttons resend-btn" routerLink="/shared/verify-code">
+      <ion-button expand="block">Resend Code</ion-button>
+    </div>
+
+    <form>
+      <div class="bottom-sec" routerLink="/shared/verify-code">
+        <div class="buttons">
+          <ion-button expand="block">Next</ion-button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</ion-content>

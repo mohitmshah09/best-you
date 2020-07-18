@@ -10,7 +10,7 @@ import { NavController } from '@ionic/angular';
 export class PasswordPage implements OnInit {
   passwordForm: FormGroup;
   submitted: Boolean = false;
-  match = false;
+  match = true;
   passwordType: string = 'password';
   passwordIcon: string = 'eye-off-outline';
   cPasswordType: string = 'password';
@@ -75,8 +75,21 @@ export class PasswordPage implements OnInit {
       this.match = false;
       message.innerHTML = "Passwords must match.";
       return
+    }else{
+      this.match = true;
+      message.innerHTML = "";
     }
     console.log("data", data);
      this.navCrl.navigateForward('/registration/profile')
+  }
+
+  styleObject(){
+    if(this.submitted && this.passwordForm.controls.cPassword.invalid){
+      return {'border-bottom':'3px solid var(--error-color)'}
+    }
+    if(!this.match){
+      return {'border-bottom':'3px solid var(--error-color)'}
+
+    }
   }
 }

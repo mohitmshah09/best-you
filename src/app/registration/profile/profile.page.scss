@@ -1,0 +1,79 @@
+.header-md::after {
+    background-image: none !important;
+}
+
+ion-toolbar {
+    ion-title {
+        margin-left: -27px;
+        font-family: 'Poppins', sans-serif;
+		color: #1E2036;
+		font-size: 20px;
+    }
+}
+
+.profile-sec {
+    text-align: center;
+    position: relative;
+    width: 175px;
+    margin: auto;
+
+
+    .profile-img {
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 95px;
+        border: 6px solid white;
+
+        &::before {
+            content: "";
+            background: var(--button-color);
+            height: 17px;
+            width: 17px;
+            position: absolute;
+            left: -3px;
+            top: 35%;
+            border-radius: 50%;
+            z-index: 11;
+            border: 5px solid white;
+        }
+        &::after {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+            content: "";
+            border: 6px solid var(--button-color);
+            right: 2px;
+            position: absolute;
+            left: 1px;
+            border-radius: 50%;
+            top: -6px;
+            bottom: -6px;
+        }
+        img {
+            max-height: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    span {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        background: var(--button-color);
+        line-height: 40px;
+        position: absolute;
+        bottom: 0px;
+        right: 6px;
+        border: 2px solid white;
+
+        img {
+            height: 22px;
+        }
+    }
+}

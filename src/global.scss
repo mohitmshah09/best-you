@@ -100,8 +100,8 @@
 		.item-has-focus{
 			--highlight-background:#457CAC !important;
 		}
-		.ion-untouched.ion-invalid{
-			--highlight-background:var(--error-color) !important;
+		.ion-invalid{
+			--highlight-background:transparent !important;
 		}
 		
 

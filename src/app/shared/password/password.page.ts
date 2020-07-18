@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-password',
@@ -14,7 +15,9 @@ export class PasswordPage implements OnInit {
   passwordIcon: string = 'eye-off-outline';
   cPasswordType: string = 'password';
   cPasswordIcon: string = 'eye-off-outline';
-  constructor() {
+  constructor(
+    public navCrl:NavController
+  ) {
     this.passwordForm = new FormGroup({
       password: new FormControl('', [Validators.required]),
       cPassword: new FormControl('', [Validators.required])
@@ -70,9 +73,10 @@ export class PasswordPage implements OnInit {
     }
     if (data.password != data.cPassword) {
       this.match = false;
-      message.innerHTML = "Passwords must match."
+      message.innerHTML = "Passwords must match.";
+      return
     }
     console.log("data", data);
-    //  this.navCrl.navigateForward('/shared/verify-code')
+     this.navCrl.navigateForward('/registration/profile')
   }
 }

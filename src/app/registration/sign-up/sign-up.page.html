@@ -4,7 +4,7 @@
 
     <form [formGroup]="signUpForm">
       <div>
-        <ion-item [ngStyle]="{'border-bottom':error}">
+        <ion-item [ngStyle]="{'border-bottom':submitted &&f.firstName.errors?'3px solid var(--error-color)':''}">
           <ion-label position="floating">First Name</ion-label>
           <ion-input type="text" formControlName="firstName" requried></ion-input>
         </ion-item>
@@ -13,8 +13,8 @@
         </div>
       </div>
       <div>
-        <ion-item>
-          <ion-label position="floating">Last Name</ion-label>
+        <ion-item [ngStyle]="{'border-bottom':submitted &&f.lastName.errors?'3px solid var(--error-color)':''}">
+          <ion-label position="floating" >Last Name</ion-label>
           <ion-input type="text" formControlName="lastName"></ion-input>
         </ion-item>
         <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div>
-        <ion-item>
+        <ion-item [ngStyle]="{'border-bottom':submitted &&f.phoneNumber.errors?'3px solid var(--error-color)':''}">
           <ion-label position="floating">Phone Number</ion-label>
           <ion-input type="text" formControlName="phoneNumber"></ion-input>
         </ion-item>

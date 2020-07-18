@@ -12,4 +12,8 @@ export class ProfilePage implements OnInit {
   ngOnInit() {
   }
 
+  selectFile(e){
+    console.log(e.target.files)
+  }
+
 }

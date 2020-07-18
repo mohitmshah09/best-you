@@ -14,8 +14,9 @@
         <div class="profile-img">
           <img src="assets/images/profile.png">
         </div>
-        <span><img src="assets/images/pencil.svg">
+        <span (click)="files.click()"><img src="assets/images/pencil.svg">
         </span>
+        <input type="file" hidden #files (change)="selectFile($event)">
       </div>
     </div>
     <form>
@@ -24,7 +25,8 @@
           <ion-button expand="block">Sign up</ion-button>
         </div>
         <p class="text-center mb-0 links mt-2">Already have an account? <span style="font-weight: 600;outline: none;"
-            routerLink="/registration/login"> Log In</span>
+           > Log In</span>
+           <!-- routerLink="/registration/login" -->
         </p>
       </div>
     </form>

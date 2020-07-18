@@ -1,6 +1,13 @@
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Enter Name and Phone</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
   <div class="form-section">
-    <p class="title text-center">Enter Name and Phone</p>
+    <!-- <p class="title text-center"></p> -->
 
     <form [formGroup]="signUpForm">
       <div>
@@ -35,7 +42,8 @@
         <div class="buttons" (click)="next(signUpForm.value)">
           <ion-button expand="block">Next</ion-button>
         </div>
-        <p class="text-center mb-0 links mt-2">Already have an account? <span style="font-weight: 600;outline: none;" routerLink="/registration/login"> Log In</span>
+        <p class="text-center mb-0 links mt-2">Already have an account? <span style="font-weight: 600;outline: none;" > Log In</span>
+          <!-- routerLink="/registration/login" -->
         </p>
       </div>
     </form>

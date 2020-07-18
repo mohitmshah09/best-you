@@ -16,7 +16,7 @@
         </div>
         <span (click)="files.click()"><img src="assets/images/pencil.svg">
         </span>
-        <input type="file" hidden #files (change)="selectFile($event)">
+        <input type="file" hidden #files (change)="selectFile($event)" accept="image/*">
       </div>
     </div>
     <form>

@@ -14,12 +14,12 @@
       <p class="phn-num">+1 (999) 999-9999</p>
     </div>
 
-    <div class="buttons resend-btn" routerLink="/shared/verify-code">
+    <div class="buttons resend-btn" (click)="verifyCode()" >
       <ion-button expand="block">Resend Code</ion-button>
     </div>
 
     <form>
-      <div class="bottom-sec" routerLink="/shared/verify-code">
+      <div class="bottom-sec" (click)="verifyCode()" >
         <div class="buttons">
           <ion-button expand="block">Next</ion-button>
         </div>

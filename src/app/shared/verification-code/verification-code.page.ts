@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Router, NavigationExtras } from '@angular/router';
 declare const $: any;
 @Component({
   selector: 'app-verification-code',
@@ -10,9 +11,16 @@ export class VerificationCodePage implements OnInit {
   code: any;
   verificationCode = 4568;
   message: any;
+  details:any;
   constructor(
-    public navCtl:NavController
-  ) { }
+    public navCtl: NavController,
+    public route: Router
+  ) {
+    if(this.route.getCurrentNavigation().extras.state){
+      this.details = this.route.getCurrentNavigation().extras.state.data
+    }
+    console.log(this.details)
+  }
 
   ngOnInit() {
   }
@@ -45,9 +53,12 @@ export class VerificationCodePage implements OnInit {
       console.log("in if")
       this.message = "Wrong code";
       return
-    }else{
-      this.message ="";
+    } else {
+      this.message = "";
     }
-    this.navCtl.navigateForward('/shared/password')
+    let navigationextras: NavigationExtras = {
+      state: { data:this.details }
+    }
+    this.navCtl.navigateForward('/shared/password', navigationextras)
   }
 }

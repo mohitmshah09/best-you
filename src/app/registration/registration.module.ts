@@ -42,7 +42,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       {
         path:'forgot-psw-code',
         loadChildren:()=>import('./forgot-psw-code/forgot-psw-code.module').then(m=>m.ForgotPswCodePageModule)
-      }
+      },
+      {
+        path: 'reset-successfull',
+        loadChildren: () => import('./reset-successfull/reset-successfull.module').then( m => m.ResetSuccessfullPageModule)
+      },
     ])
   ]
 })

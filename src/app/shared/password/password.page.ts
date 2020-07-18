@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-password',
@@ -15,13 +16,20 @@ export class PasswordPage implements OnInit {
   passwordIcon: string = 'eye-off-outline';
   cPasswordType: string = 'password';
   cPasswordIcon: string = 'eye-off-outline';
+  details:any;
   constructor(
-    public navCrl:NavController
+    public navCrl:NavController,
+    public route:Router
   ) {
     this.passwordForm = new FormGroup({
       password: new FormControl('', [Validators.required]),
       cPassword: new FormControl('', [Validators.required])
     })
+
+    if(this.route.getCurrentNavigation().extras.state){
+      this.details = this.route.getCurrentNavigation().extras.state.data
+    }
+    console.log("in password page",this.details)
   }
 
   ngOnInit() {
@@ -80,7 +88,12 @@ export class PasswordPage implements OnInit {
       message.innerHTML = "";
     }
     console.log("data", data);
-     this.navCrl.navigateForward('/registration/profile')
+    if(this.details == 'sign-up'){
+
+      this.navCrl.navigateForward('/registration/profile')
+    }else{
+      this.navCrl.navigateForward('/registration/reset-successfull')
+    }
   }
 
   styleObject(){

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { NavController } from '@ionic/angular';
+import { NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -37,6 +38,9 @@ export class SignUpPage implements OnInit {
       return
     }
     console.log("data", data);
-    this.navCrl.navigateForward('/shared/verify-code')
+    let navigationextras:NavigationExtras={
+      state:{data:'sign-up'}
+    }
+    this.navCrl.navigateForward('/shared/verify-code',navigationextras)
   }
 }

@@ -1,0 +1,38 @@
+.header-md::after {
+    background-image: none !important;
+}
+
+ion-header {
+    background: #FAFAFA;
+}
+
+ion-toolbar {
+    --background: #FAFAFA;
+
+    ion-title {
+        margin-left: -27px;
+        font-family: 'Poppins', sans-serif;
+        color: #1E2036;
+        font-size: 20px;
+        font-weight: bold;
+    }
+   
+}
+.close-icon{
+    height: 100%;
+    font-size: 43px;
+    margin-left: 10px;
+}
+.message-txt {
+    color: #777885;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+
+.forgot-img {
+    margin: 35px auto 20px;
+    display: block;
+    height: 210px;
+}

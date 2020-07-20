@@ -61,4 +61,5 @@ export class VerificationCodePage implements OnInit {
     }
     this.navCtl.navigateForward('/shared/password', navigationextras)
   }
+  
 }

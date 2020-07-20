@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
@@ -7,13 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public navCtrl: NavController
+  ) { }
 
   ngOnInit() {
   }
 
-  selectFile(e){
+  selectFile(e) {
     console.log(e.target.files)
   }
 
+  /**
+   * Sign Up
+   */
+  signUp() {
+    // this.navCtrl.navigateForward('/home/feed');
+  }
 }

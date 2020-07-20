@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,9 @@ export class LoginPage implements OnInit {
   passwordIcon: string = 'eye-off-outline';
   wrongPhnNumberMsg: any;
   wrongPasswordMsg: any;
-  constructor() {
+  constructor(
+    public navCtrl:NavController
+  ) {
     this.loginForm = new FormGroup({
       password: new FormControl('', [Validators.required]),
       phoneNumber: new FormControl('', [Validators.required])
@@ -64,8 +67,9 @@ export class LoginPage implements OnInit {
       this.wrongPasswordMsg = "";
       this.wrongPhnNumberMsg = "";
     }
+    console.log(data);
+    this.navCtrl.navigateForward('/home/feed');
 
-    console.log(data)
   }
 
 }

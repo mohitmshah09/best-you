@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'registration',
@@ -20,10 +20,6 @@ const routes: Routes = [
     path:"shared",
     loadChildren:()=>import('./shared/shared.module').then(m=>m.SharedModule)
   },
- 
- 
-
- 
   
 ];
 @NgModule({

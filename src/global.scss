@@ -104,7 +104,7 @@
 			--highlight-background:transparent !important;
 		}
 		
-
+		
 		.bottom-sec{
 			position: absolute;
 			right: 20px;
@@ -127,4 +127,19 @@
 		--box-shadow: none;
 		--border-radius: 6px;
 	}
+}
+
+.otp-input{
+	height: 60px !important;
+	width: 60px !important;    
+	// border: 1px solid var(--input-border-color) !important;
+	@media only screen and (max-width: 358px) {
+		width:50px;
+		height:50px;
+	}
+	
+	
+}
+.wrapper .otp-input:first-child{
+	position: relative;
 }

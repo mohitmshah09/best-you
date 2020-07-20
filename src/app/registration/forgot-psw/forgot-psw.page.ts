@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { NavController } from '@ionic/angular';
+import { NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-psw',
@@ -34,7 +35,12 @@ export class ForgotPswPage implements OnInit {
       return
     }
     console.log(data);
-    this.navCtr.navigateForward('/registration/forgot-psw-code')
+    let navigationextras:NavigationExtras = {
+      state:{
+        data:JSON.stringify(data)
+      }
+    }
+    this.navCtr.navigateForward('/registration/forgot-psw-code',navigationextras)
   }
 
 }

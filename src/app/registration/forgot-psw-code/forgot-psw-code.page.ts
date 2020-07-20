@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationExtras } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -8,10 +8,17 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./forgot-psw-code.page.scss'],
 })
 export class ForgotPswCodePage implements OnInit {
-
+  phnNumber: any;
   constructor(
-    public navCrl: NavController
-  ) { }
+    public navCrl: NavController,
+    public router: Router
+  ) {
+    if (this.router.getCurrentNavigation().extras.state) {
+      console.log(this.router.getCurrentNavigation().extras.state.data)
+      this.phnNumber = this.router.getCurrentNavigation().extras.state.data;
+      this.phnNumber = JSON.parse(this.phnNumber).phoneNumber
+    }
+  }
 
   ngOnInit() {
   }

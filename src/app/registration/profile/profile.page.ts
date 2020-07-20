@@ -23,6 +23,6 @@ export class ProfilePage implements OnInit {
    * Sign Up
    */
   signUp() {
-    // this.navCtrl.navigateForward('/home/feed');
+    this.navCtrl.navigateForward('/home/feed');
   }
 }

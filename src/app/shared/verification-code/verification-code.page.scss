@@ -26,11 +26,11 @@ ion-content{
             
         }
     }
-    
+ 
     .code-box{    
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        width: auto ;
+        display: table;
+        margin: auto;
     }
     .input-box {
         height: 60px;
@@ -57,7 +57,7 @@ ion-content{
     .message-txt{
         color: var(--error-color);
         font-size: 12px;
-        margin-left: 10px;
+        // margin-left: 10px;
         
     }
 }

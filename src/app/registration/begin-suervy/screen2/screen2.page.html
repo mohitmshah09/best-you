@@ -1,9 +1,53 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>screen2</ion-title>
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Complete Profile</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <p class="text-center page-num mb-0">2 of 7</p>
+  <!-- <div class="form-section">
+    <form [formGroup]="profileForm">
+      <div>
+        <ion-item >
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="text" formControlName="email"></ion-input>
+        </ion-item>
+      </div>
+      <div>
+        <ion-item >
+          <ion-label position="floating">Gener</ion-label>
+          <ion-input type="text" formControlName="gender"></ion-input>
+        </ion-item>
+      </div>
+      <div>
+        <ion-item >
+          <ion-label position="floating">Relationship Status</ion-label>
+          <ion-input type="text" formControlName="relationshipStatus"></ion-input>
+        </ion-item>
+      </div>
+      <div>
+        <ion-item >
+          <ion-label position="floating">Date of Birth</ion-label>
+          <ion-input type="text" formControlName="dob"></ion-input>
+        </ion-item>
+      </div>
+      <div>
+        <ion-item >
+          <ion-label position="floating">Profession</ion-label>
+          <ion-input type="text" formControlName="profession"></ion-input>
+        </ion-item>
+        <div  class="invalid-feedback">
+          <div >*Profession List found at: <br/>https://www.nlplifetraining.com/request-callback</div>
+        </div>
+      </div>
 
+      <div class="bottom-sec">
+        <div class="buttons" (click)="next(profileForm.value)">
+          <ion-button expand="block">Next</ion-button>
+        </div>
+      </div>
+    </form>
+  </div> -->
 </ion-content>

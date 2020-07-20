@@ -1,0 +1,23 @@
+ion-content{
+    --background:#FAFAFA;
+}
+.header-md::after {
+    background-image: none !important;
+}
+ion-header{
+    background-color: #FAFAFA;
+}
+
+ion-toolbar {
+    --background:#FAFAFA;
+    ion-title {
+        margin-left: -27px;
+        font-family: 'Poppins', sans-serif;
+		color: #1E2036;
+		font-size: 20px;
+    }
+}
+
+.page-num{
+    color: #1E2036;
+}

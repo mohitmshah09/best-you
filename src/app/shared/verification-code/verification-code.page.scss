@@ -32,32 +32,9 @@ ion-content{
         display: table;
         margin: auto;
     }
-    .input-box {
-        height: 60px;
-        width: 60px;
-        display: inline-block;
-        margin: 0 10px;
-        @media only screen and (max-width: 358px) {
-            width:50px;
-            height:50px;
-        }
-    }
-    .input-box ion-input {
-        height: 100%;
-        width: 100%;
-        border-radius: 4px;
-        border: 1px solid var(--input-border-color);
-        --padding-start:23px;
-        --padding-top:12px;
-        color: var(--form-title-color);
-        font-weight: bold;
-        font-size: 24px;
-        
-    }
+ 
     .message-txt{
         color: var(--error-color);
         font-size: 12px;
-        // margin-left: 10px;
-        
     }
 }

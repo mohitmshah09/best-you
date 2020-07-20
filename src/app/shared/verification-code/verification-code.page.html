@@ -16,34 +16,7 @@
 
       <div class="code-box">
         <ng-otp-input class="text-center" (onInputChange)="onOtpChange($event)" [config]="config"></ng-otp-input>
-        
-        <p class="message-txt" *ngIf="message">{{message}}</p>
-
-        <!-- <div class="all">
-          <div class="input-box">
-            <ion-input #otp1 id="first" type="number" required maxLength="1" (keyup)="otpController($event,otp2,'')"
-              [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
-            </ion-input>
-          </div>
-          <div class="input-box">
-            <ion-input #otp2 id="second" type="number" required maxLength="1" (keyup)="otpController($event,otp3,otp1)"
-              [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
-            </ion-input>
-          </div>
-          <div class="input-box">
-            <ion-input #otp3 id="third" type="number" required maxLength="1" (keyup)="otpController($event,otp4,otp2)"
-              [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
-            </ion-input>
-          </div>
-          <div class="input-box">
-            <ion-input #otp4 id="fourth" type="number" required maxLength="1" (keyup)="otpController($event,'',otp3)"
-              [ngStyle]="{'border':message? '3px solid var(--error-color)':''}">
-            </ion-input>
-          </div>
-          <div *ngIf="message">
-            <span class="message-txt">{{message}}</span>
-          </div>
-        </div> -->
+        <p class="message-txt mt-1" *ngIf="message">{{message}}</p>
       </div>
 
       <div class="bottom-sec">

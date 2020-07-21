@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>screen5</ion-title>
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>What I Do </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <p class="text-center page-num mb-0">5 of 8</p>
+  <div class="form-section">
 
+    <form [formGroup]="doForm">
+
+      <p class="page-num sub-title">I help people with: <small>(select all that apply)</small></p>
+      <div class="px-3 mb-3">
+        <div  *ngFor="let value of list">
+          <div class="d-flex select-box mb-2">
+            <div>
+              <ion-checkbox slot="start" (ionChange)="selectValue($event)" [value]="value">
+              </ion-checkbox>
+            </div>
+            <div class="label-sec">
+              <ion-label>{{value}}</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </ion-content>
+<ion-footer>
+  <div class="buttons" (click)="next(doForm.value)">
+    <ion-button expand="block">Next</ion-button>
+  </div>
+</ion-footer>

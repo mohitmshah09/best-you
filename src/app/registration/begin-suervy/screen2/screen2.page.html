@@ -6,48 +6,50 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <p class="text-center page-num mb-0">2 of 7</p>
-  <!-- <div class="form-section">
-    <form [formGroup]="profileForm">
+  <p class="text-center page-num mb-0">2 of 8</p>
+
+  <div class="form-section">
+    <div class="about-sec mb-4">
+      <p>About Me</p>
+      <span>About me…………….</span>
+    </div>
+    <form [formGroup]="urlForm">
       <div>
         <ion-item >
-          <ion-label position="floating">Email</ion-label>
-          <ion-input type="text" formControlName="email"></ion-input>
+          <ion-label position="floating">Facebook URL</ion-label>
+          <ion-input type="text" formControlName="facebookUrl" ></ion-input>
         </ion-item>
       </div>
       <div>
         <ion-item >
-          <ion-label position="floating">Gener</ion-label>
-          <ion-input type="text" formControlName="gender"></ion-input>
+          <ion-label position="floating">Instagram URL</ion-label>
+          <ion-input type="text" formControlName="instaUrl"></ion-input>
         </ion-item>
       </div>
       <div>
         <ion-item >
-          <ion-label position="floating">Relationship Status</ion-label>
-          <ion-input type="text" formControlName="relationshipStatus"></ion-input>
+          <ion-label position="floating">Twitter URL</ion-label>
+          <ion-input type="text" formControlName="twitterUrl"></ion-input>
         </ion-item>
       </div>
       <div>
         <ion-item >
-          <ion-label position="floating">Date of Birth</ion-label>
-          <ion-input type="text" formControlName="dob"></ion-input>
+          <ion-label position="floating">Website URL</ion-label>
+          <ion-input type="text" formControlName="wesiteUrl"></ion-input>
         </ion-item>
       </div>
       <div>
         <ion-item >
-          <ion-label position="floating">Profession</ion-label>
-          <ion-input type="text" formControlName="profession"></ion-input>
+          <ion-label position="floating">YouTube URL</ion-label>
+          <ion-input type="text" formControlName="youTubeUrl"></ion-input>
         </ion-item>
-        <div  class="invalid-feedback">
-          <div >*Profession List found at: <br/>https://www.nlplifetraining.com/request-callback</div>
-        </div>
       </div>
 
       <div class="bottom-sec">
-        <div class="buttons" (click)="next(profileForm.value)">
+        <div class="buttons" (click)="next(urlForm.value)">
           <ion-button expand="block">Next</ion-button>
         </div>
       </div>
     </form>
-  </div> -->
+  </div>
 </ion-content>

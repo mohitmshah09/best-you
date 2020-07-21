@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Screen2PageRoutingModule } from './screen2-routing.module';
+import { Screen8PageRoutingModule } from './screen8-routing.module';
 
-import { Screen2Page } from './screen2.page';
+import { Screen8Page } from './screen8.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,8 @@ import { Screen2Page } from './screen2.page';
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    Screen2PageRoutingModule
+    Screen8PageRoutingModule
   ],
-  declarations: [Screen2Page]
+  declarations: [Screen8Page]
 })
-export class Screen2PageModule {}
+export class Screen8PageModule {}

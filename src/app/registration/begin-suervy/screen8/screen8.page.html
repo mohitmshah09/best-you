@@ -6,30 +6,30 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <p class="text-center page-num mb-0">7 of 8</p>
+  <p class="text-center page-num mb-0">8 of 8</p>
   <div class="form-section">
 
     <form [formGroup]="lagecyForm">
 
-      <p class="page-num sub-title">The Best You believes that the meaning of life is to find your gift. The purpose of life is to Give it Away. We encourage you through our Brand and networking groups to Leave A Legacy.</p>
+      <p class="page-num sub-title">I Would Like To Contribute Or Help With</p>
       <div class="px-3 mb-3">
-          <div class="d-flex select-box mb-2">
+          <div class="d-flex select-box mb-2"  *ngFor="let value of list">
             <div>
-              <ion-checkbox slot="start" (ionChange)="selectValue($event)" value="I want to make a difference, I want to be of service.">
+              <ion-checkbox slot="start" (ionChange)="selectHelpValue($event)" [value]="value">
               </ion-checkbox>
             </div>
             <div class="label-sec">
-              <ion-label>I want to make a difference, I want to be of service.</ion-label>
+              <ion-label>{{value}}</ion-label>
             </div>
           </div>
       </div>
 
-      <p class="page-num sub-title">Things that bug, bother me:  <small>(select all that apply) </small></p>
+      <p class="page-num sub-title">Time & Location Commitment</p>
       <div class="px-3 mb-3">
-        <div  *ngFor="let value of list">
+        <div  *ngFor="let value of list2">
           <div class="d-flex select-box mb-2">
             <div>
-              <ion-checkbox slot="start" (ionChange)="selectBugValue($event)" [value]="value">
+              <ion-checkbox slot="start" (ionChange)="selectTimeValue($event)" [value]="value">
               </ion-checkbox>
             </div>
             <div class="label-sec">

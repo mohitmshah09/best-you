@@ -1,9 +1,110 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>screen3</ion-title>
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Welcome Survey </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <p class="text-center page-num mb-0">3 of 8</p>
+  <div class="form-section">
 
+    <form [formGroup]="surveyForm">
+
+      <p class="page-num sub-title">Not wanting to box you… What would you say you are: <small>(select all that
+          apply)</small></p>
+      <div class="px-3 mb-3">
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectWaitingBox($event)"
+              value="I consider myself “A Learner” (Someone interested in learning)."></ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>I consider myself “A Learner” (Someone interested in learning).</ion-label>
+          </div>
+        </div>
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectWaitingBox($event)"
+              value="I consider myself “A Transitioner” (Looking at changing careers, help others, share my expertise).">
+            </ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>I consider myself “A Transitioner” (Looking at changing careers, help others, share my
+              expertise).</ion-label>
+          </div>
+        </div>
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectWaitingBox($event)"
+              value="I consider myself “A Pro” I have the expertise."></ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>I consider myself “A Pro” I have the expertise.</ion-label>
+          </div>
+        </div>
+      </div>
+      <p class="page-num sub-title">In my spare time I like to:</p>
+      <div class="px-3">
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectspareTime($event)" value="Listen to audiobooks">
+            </ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>Listen to audiobooks</ion-label>
+          </div>
+        </div>
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectspareTime($event)" value="Read"></ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>Read</ion-label>
+          </div>
+        </div>
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectspareTime($event)" value="Attend live events"></ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>Attend live events</ion-label>
+          </div>
+        </div>
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectspareTime($event)" value="Take online courses">
+            </ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>Take online courses</ion-label>
+          </div>
+        </div>
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectspareTime($event)" value="Listen to podcasts"></ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>Listen to podcasts</ion-label>
+          </div>
+        </div>
+        <div class="d-flex select-box mb-2">
+          <div>
+            <ion-checkbox slot="start" (ionChange)="selectspareTime($event)" value="Watch television"></ion-checkbox>
+          </div>
+          <div class="label-sec">
+            <ion-label>Watch television</ion-label>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="bottom-sec">
+      
+      </div> -->
+    </form>
+  </div>
 </ion-content>
+<ion-footer>
+  <div class="buttons" (click)="next(surveyForm.value)">
+    <ion-button expand="block">Next</ion-button>
+  </div>
+</ion-footer>

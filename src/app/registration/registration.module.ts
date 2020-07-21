@@ -79,6 +79,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         path: 'screen7',
         loadChildren: () => import('./begin-suervy/screen7/screen7.module').then( m => m.Screen7PageModule)
       },
+      {
+        path: 'screen8',
+        loadChildren: () => import('./begin-suervy/screen8/screen8.module').then( m => m.Screen8PageModule)
+      },
     ])
   ]
 })

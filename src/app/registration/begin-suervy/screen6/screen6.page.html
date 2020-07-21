@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>screen6</ion-title>
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Passion </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <p class="text-center page-num mb-0">6 of 8</p>
+  <div class="form-section">
 
+    <form [formGroup]="passionForm">
+
+      <p class="page-num sub-title">I am passionate about: <small>(Show me this type of content) </small></p>
+      <div class="px-3 mb-3">
+        <div  *ngFor="let value of passionList">
+          <div class="d-flex select-box mb-2">
+            <div>
+              <ion-checkbox slot="start" (ionChange)="selectValue($event)" [value]="value">
+              </ion-checkbox>
+            </div>
+            <div class="label-sec">
+              <ion-label>{{value}}</ion-label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </ion-content>
+<ion-footer>
+  <div class="buttons" (click)="next(passionForm.value)">
+    <ion-button expand="block">Next</ion-button>
+  </div>
+</ion-footer>

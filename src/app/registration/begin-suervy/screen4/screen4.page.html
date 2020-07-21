@@ -1,9 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>screen4</ion-title>
+<ion-header class="d-flex">
+  <ion-back-button style="margin-top:4px">
+  </ion-back-button>
+  <ion-toolbar class="text-center">
+    <ion-title>Interests</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <p class="text-center page-num mb-0">4 of 8</p>
+  <div class="form-section">
 
+    <form [formGroup]="interestForm">
+
+      <p class="page-num sub-title">I am interested in: <small>(select all that apply)</small></p>
+      <div class="px-3 mb-3">
+        <div class="row">
+          <div class="col-6"  *ngFor="let intrest of intrestFirstList">
+            <div class="d-flex select-box mb-2">
+              <div>
+                <ion-checkbox slot="start" (ionChange)="selectIntrest($event)" [value]="intrest">
+                </ion-checkbox>
+              </div>
+              <div class="label-sec">
+                <ion-label>{{intrest}}</ion-label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </ion-content>
+<ion-footer>
+  <div class="buttons" (click)="next(interestForm.value)">
+    <ion-button expand="block">Next</ion-button>
+  </div>
+</ion-footer>

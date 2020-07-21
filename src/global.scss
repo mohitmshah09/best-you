@@ -38,6 +38,10 @@
 	--error-color:#F75165;
 }
 
+.footer-md::before{
+	background-image: none;
+}
+
 .invalid-feedback{
 	display: block !important;
 	color: var(--error-color) !important;

@@ -2,11 +2,16 @@ ion-header {
     ion-toolbar {
         --background: var(--form-title-color);
         color: white;
-        padding: 15px;
+        padding: 23px 15px
     }
+    
     .header-sec {
         display: flex;
         align-items: center;
+    }
+    .profile-sec{
+        position: relative;
+        padding: 1px;
     }
     .profile-img {
         height: 40px;
@@ -14,28 +19,29 @@ ion-header {
         border-radius: 50%;
         overflow: hidden;
         margin-left: 14px;
-
+        
         &::before {
             content: "";
             background: white;
             height: 14px;
             width: 14px;
             position: absolute;
-            left: 1px;
+            left: 2px;
             top: 35%;
             border-radius: 50%;
             z-index: 11;
             border: 5px solid var(--form-title-color);
+        
         }
         &::after {
             content: "";
             border: 2px solid white;
-            right: 271px;
+            right: -4px;
             position: absolute;
-            left: 8px;
+            left: 10px;
             border-radius: 50%;
             top: 4px;
-            bottom: 3px;
+            bottom: -4px;
         }
         img {
             max-height: 100%;
@@ -46,11 +52,23 @@ ion-header {
         }
     }
     .name {
-        font-size: 25px;
+        font-size: 23px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 6px;
+    }
+    .icon-sec{
+        font-size: 31px;
+        margin-top: -21px;
+        .bell-icon{
+            height: 34px;
+            width: 35px;
+            margin: -3px 16px 0;
+        }
     }
 }
 ion-content {
     --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
     .main-card {
         background: white;
         box-shadow: 0 0 20px #0000000D;
@@ -60,6 +78,35 @@ ion-content {
             width: 100%;
             border-radius: 10px;
             overflow: hidden;
+        }
+        .content-sec {
+            padding: 0px 15px 15px;
+            .post-title{
+                color:var(--form-title-color);
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .date{
+                color:#A5A6AF;
+                display: flex;
+                align-items: center;
+                ion-icon{
+                    font-size: 22px;
+                    margin-right: 5px;
+                }
+            }
+            .content{
+                color:#777885;
+            }
+            .share-btn{
+                --background: var(--button-color);
+                --box-shadow: none;
+                float: right;
+            }
+            .view-btn{
+                --padding-start: 30px;
+                --padding-end: 30px;
+            }
         }
     }
 }

@@ -6,13 +6,16 @@ ion-tab-button{
     width: 34px;
     }
     ion-icon{
-        font-size: 35px;
+        font-size: 42px;
     }
 }
 ion-tab-bar{
-    padding: 10px 0;
+    padding: 4px 0;
 }
 .tab-selected{
+    ion-icon{
+        color:var(--form-title-color) !important;
+    }
     path{
        fill:var(--form-title-color) !important;
     }

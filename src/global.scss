@@ -41,6 +41,9 @@
 .footer-md::before{
 	background-image: none;
 }
+.header-md::after{
+	background-image:none;
+}
 
 .invalid-feedback{
 	display: block !important;

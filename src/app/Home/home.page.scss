@@ -1,1 +1,19 @@
 
+ion-tab-button{
+    color:#D2D2D6;
+    svg{
+        height: 31px;
+    width: 34px;
+    }
+    ion-icon{
+        font-size: 35px;
+    }
+}
+ion-tab-bar{
+    padding: 10px 0;
+}
+.tab-selected{
+    path{
+       fill:var(--form-title-color) !important;
+    }
+}

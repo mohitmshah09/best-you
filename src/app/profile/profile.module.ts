@@ -17,7 +17,6 @@ import { RouterModule } from '@angular/router';
       {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
-
       }
     ])
   ]

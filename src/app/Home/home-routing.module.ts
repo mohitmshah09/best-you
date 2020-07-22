@@ -39,6 +39,10 @@ const routes: Routes = [
     redirectTo: '/home/feed',
     pathMatch: 'full'
   },
+  {
+    path: 'about',
+    loadChildren: () => import('../Home/about/about.module').then( m => m.AboutPageModule)
+  },
  
  
  

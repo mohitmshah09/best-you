@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { MorePageRoutingModule } from './more-routing.module';
 
 import { MorePage } from './more.page';
+import { HeaderComponent } from '../header/header.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,9 @@ import { MorePage } from './more.page';
     IonicModule,
     MorePageRoutingModule
   ],
-  declarations: [MorePage]
+  declarations: [
+    MorePage,
+    HeaderComponent
+  ]
 })
 export class MorePageModule {}

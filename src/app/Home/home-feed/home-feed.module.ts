@@ -7,14 +7,12 @@ import { ExploreContainerComponentModule } from '../../explore-container/explore
 
 import { HomeFeedPageRoutingModule } from './home-feedrouting.module';
 import { HeaderComponent } from '../header/header.component';
-// import { HeaderPageModule } from '../header/header.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    // HeaderPageModule,
     ExploreContainerComponentModule,
     HomeFeedPageRoutingModule
   ],

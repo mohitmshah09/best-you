@@ -1,0 +1,21 @@
+ion-header {
+    background: var(--form-title-color);
+}
+ion-content {
+    --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
+    .list-item{
+        border-bottom: 1px solid #D2D2D6;
+        padding: 21px 10px;
+        color: #4B4C5E;
+        p{
+            font-size: 19px;
+        }
+        ion-icon{
+            font-size: 33px;
+        }
+        img{
+            height:27px;
+        }
+    }
+}

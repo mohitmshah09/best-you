@@ -7,27 +7,69 @@
   </div>
   <div class="p-3 pt-4 detail-section">
     <div>
-    <div class="title-sec">
-      <p class="title">About Me</p>
-      <p class="ml-auto edit-txt">Edit</p>
+      <div class="title-sec">
+        <p class="title">About Me</p>
+        <p class="ml-auto edit-txt" routerLink="/home/profile/edit-about">Edit</p>
+      </div>
+      <div class="title-sec px-3" style="align-items: unset;">
+        <ion-icon name="person" class="mr-2"></ion-icon><span>Bio</span>
+      </div>
+      <p class=" content-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod, lorem ipsum dolor
+        sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur…</p>
     </div>
-    <div class="title-sec px-3" style="align-items: unset;">
-      <ion-icon name="person" class="mr-2"></ion-icon><span>Bio</span>
-    </div>
-    <p class=" content-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur…</p>
-  </div>
 
-  <div>
-    <div class="title-sec">
-      <p class="title">Work</p>
-      <p class="ml-auto edit-txt">Edit</p>
+    <div>
+      <div class="title-sec">
+        <p class="title">Basic Info</p>
+        <p class="ml-auto edit-txt" routerLink="/home/profile/edit-basic-info">Edit</p>
+      </div>
+      <div>
+        <div class="title-sec px-3" >
+          <img src='assets/images/gender.png' class="mr-2 intrest-icon">
+          <span>Gender</span>
+        </div>
+        <p class=" content-txt work">Male</p>
+      </div>
+      <div>
+        <div class="title-sec px-3" style="align-items: unset;">
+       <img src="assets/images/relationship.png" class="mr-2 intrest-icon">
+          <span>Relationship Status</span>
+        </div>
+        <p class=" content-txt work">Married</p>
+      </div>
+      <div>
+        <div class="title-sec px-3" style="align-items: unset;">
+          <i class="fa fa-birthday-cake mr-2" aria-hidden="true"></i>
+          <span>Date of Birth</span>
+        </div>
+        <p class=" content-txt work">01/01/1980</p>
+      </div>
     </div>
-    <div class="title-sec px-3" style="align-items: unset;">
-      <i class="fa fa-building mr-2" aria-hidden="true"></i>
-      <span>Profession</span>
+
+
+    <div>
+      <div class="title-sec">
+        <p class="title">Work</p>
+        <p class="ml-auto edit-txt" routerLink="/home/profile/edit-work">Edit</p>
+      </div>
+      <div class="title-sec px-3" style="align-items: unset;">
+        <i class="fa fa-building mr-2" aria-hidden="true"></i>
+        <span>Profession</span>
+      </div>
+      <p class=" content-txt work">Business Owner</p>
     </div>
-    <p class=" content-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur…</p>
-  </div>
-  
+
+    <div>
+      <div class="title-sec">
+        <p class="title">Interests</p>
+        <p class="ml-auto edit-txt" routerLink="/home/profile/edit-intrest">Edit</p>
+      </div>
+      <div class="title-sec px-3">
+        <img src="assets/images/profession.png" class="mr-2 intrest-icon">
+        <span>In my spare time I like to…</span>
+      </div>
+      <p class=" content-txt work"> Listen to audiobooks,Attend live events,Read,Watch Television </p>
+    </div>
+
   </div>
 </ion-content>

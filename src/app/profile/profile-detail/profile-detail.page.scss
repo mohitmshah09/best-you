@@ -27,6 +27,7 @@ ion-content {
             }
             .edit-txt{
                 color: #008EE8;
+                outline: none;
             }
             span{
                 color: #777885;
@@ -40,6 +41,17 @@ ion-content {
             color: var(--form-title-color);
             padding: 4px 10px 10px 40px;
             font-size: 16px;
+        }
+        .work{
+            margin-left: 40px;
+            padding-left: 0 !important;
+            border-bottom: 2px solid #D2D2D6;
+        }
+        .intrest-icon{
+            height: 19px;
+            width: 19px;
+            margin-top: -5px;
+            margin-left: -4px;
         }
     }
 }

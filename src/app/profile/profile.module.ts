@@ -17,7 +17,23 @@ import { RouterModule } from '@angular/router';
       {
         path: 'profile',
         loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
-      }
+      },
+      {
+        path: 'edit-about',
+        loadChildren: () => import('../profile/edit-about/edit-about.module').then( m => m.EditAboutPageModule)
+      },
+      {
+        path: 'edit-basic-info',
+        loadChildren: () => import('../profile/edit-basic-info/edit-basic-info.module').then( m => m.EditBasicInfoPageModule)
+      },
+      {
+        path: 'edit-work',
+        loadChildren: () => import('../profile/edit-work/edit-work.module').then( m => m.EditWorkPageModule)
+      },
+      {
+        path: 'edit-intrest',
+        loadChildren: () => import('../profile/edit-intrest/edit-intrest.module').then( m => m.EditIntrestPageModule)
+      },
     ])
   ]
 })

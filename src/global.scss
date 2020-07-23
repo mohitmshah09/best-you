@@ -149,3 +149,30 @@
 .wrapper .otp-input:first-child{
 	position: relative;
 }
+
+// Edit profile detail form
+.edit-form{
+	padding:15px;
+	.detail-section{
+		.title-sec{
+			display: flex;
+			align-items: center;
+			span{
+				color: #777885;
+				font-size: 13px;
+			}
+			ion-icon,i{
+				color: var(--form-title-color);
+			}
+		}
+		.content-txt{
+			color: var(--form-title-color);
+			padding: 0px 10px 10px 30px;
+			font-size: 15px;
+			margin-top: 0;
+			font-family: 'Mulish', sans-serif;
+			
+		}
+	}
+}
+// Edir profile detail end here

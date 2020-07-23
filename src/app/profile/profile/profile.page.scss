@@ -25,10 +25,16 @@
         font-size: 17px;
         font-family: 'Poppins', sans-serif;
         margin-top: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .position-title{
         font-family: 'Mulish', sans-serif;
         font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .icon-sec{
         font-size: 23px;

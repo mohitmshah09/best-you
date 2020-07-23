@@ -1,0 +1,135 @@
+ion-content{
+    --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
+    --padding-bottom: 180px;
+    ion-chip{
+        padding: 0 21px;
+        font-family: "Mulish", sans-serif;
+        box-shadow: 0px 3px 5px #00000029;
+        @media only screen and (max-width:360px) {
+            padding: 0 18px;
+        }
+        @media only screen and (max-width:357px) {
+            padding: 0 13px;
+        }
+    }
+    .first-chip{
+        background: var(--button-color);
+        color: white;
+    }
+    .last-chip{
+        ion-icon{
+            font-size: 15px;
+            margin-top: 3px;
+        }
+    }
+    .search-bar{
+        display: flex;
+        align-items: center;
+        ion-icon{
+            font-size: 25px;
+            color: #A5A6AF;
+            
+        }
+        ion-input{
+            box-shadow: 0px 3px 6px #00000029;
+            border: 1px solid #D2D2D6;
+            background: white;
+            border-radius: 56px;
+            --padding-bottom: 7px;
+            --padding-top: 7px;
+            position: relative;
+            outline: none;
+            color: #A5A6AF;
+            text-align: left;
+            --padding-start: 15px;
+            --placeholder-color: #D2D2D6;
+        }
+        .search-icon{
+            position: absolute;
+            right: 30px;
+            z-index: 2;
+            font-size: 21px;
+        }
+    }
+    .title-sec{
+        display: flex;
+        align-items: center;
+        .title{
+            color: var(--form-title-color);
+            font-weight: 600;
+            font-size: 17px;
+            img{
+                height: 17px;
+                margin-top: -1px;
+                margin-right: 5px;
+            }
+        }
+        .edit-txt{
+            color: #008EE8;
+            outline: none;
+            font-weight: 600;
+            font-size: 15px;
+            i{
+                color: #A5A6AF;
+                margin-right: 2px;
+            }
+        }
+    }
+    .single-user{
+        background-color: white;
+        border-radius: 6px;
+        padding:10px 10px 10px 24px;
+        box-shadow: 0 3px 5px #80808099;
+        position: relative;
+        z-index: 999999;
+        
+        .profile-img{
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+                min-width: 100%;
+                max-height: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
+        }
+        .star-icon{
+            color: #FFCF40;
+            position: absolute;
+            top: 7px;
+            left: 7px;
+        }
+        .user-detail{
+            .user-name{
+                color: var(--form-title-color);
+                font-weight: bold;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 235px;
+                @media only screen and (max-width:357px) {
+                    width: 195px;
+                }
+                @media only screen and (min-width:400px) {
+                    width: 276px;
+                }
+                
+            }
+            .designation{
+                color: #A5A6AF;
+                font-size: 13px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 235px;
+                @media only screen and (min-width:400px) {
+                    width: 276px;
+                }
+            }
+        }
+    }
+}

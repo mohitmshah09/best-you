@@ -1,9 +1,82 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>network</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="p-3 pt-4">
+    <div class="text-center">
+      <div *ngIf="!isSearchBarVisible">
+        <ion-chip class="first-chip">
+          <ion-label>All</ion-label>
+        </ion-chip>
+        <ion-chip>
+          <ion-label>Favorites</ion-label>
+        </ion-chip>
+        <ion-chip>
+          <ion-label>Requests</ion-label>
+        </ion-chip>
+        <ion-chip (click)="toggleSearchBar()" class="last-chip">
+          <ion-label>
+            <ion-icon name="search"></ion-icon>
+          </ion-label>
+        </ion-chip>
+      </div>
+    </div>
+    <div class="search-bar" *ngIf="isSearchBarVisible">
+      <ion-icon name="close-outline" (click)="toggleSearchBar()"></ion-icon>
+      <ion-input type="text" placeholder="Search by name"></ion-input>
+      <ion-icon name="search" class="search-icon"></ion-icon>
+    </div>
+    <div class=" title-sec mt-3">
+      <p class="title mb-0"><img src="assets/images/network.png">105 Contacts</p>
+      <p class="ml-auto edit-txt mb-0"><i class="fa fa-sitemap" aria-hidden="true"></i>
+        Go Networking</p>
+    </div>
+    <div class="mt-2">
+      <div class="single-user mb-2">
+        <div>
+          <div class="d-flex align-items-center">
+            <div class="profile-img">
+              <img src="assets/images/profile.png">
+            </div>
+            <div class="user-detail ml-2">
+              <p class="mb-0 user-name">
+                Allen Doe
+              </p>
+              <p class="mb-0 designation">Marketing Director,xyz Company</p>
+            </div>
+          </div>
+        </div>
+        <ion-icon name="star" class="star-icon"></ion-icon>
+      </div>
 
+      <div class="single-user mb-2">
+        <div>
+          <div class="d-flex align-items-center">
+            <div class="profile-img">
+              <img src="assets/images/profile.png">
+            </div>
+            <div class="user-detail ml-2">
+              <p class="mb-0 user-name">
+                Allen Doe
+              </p>
+              <p class="mb-0 designation">Marketing Director,xyz Company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="single-user mb-2">
+        <div>
+          <div class="d-flex align-items-center">
+            <div class="profile-img">
+              <img src="assets/images/profile.png">
+            </div>
+            <div class="user-detail ml-2">
+              <p class="mb-0 user-name">
+                Allen Doe
+              </p>
+              <p class="mb-0 designation">Marketing Director,xyz Company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

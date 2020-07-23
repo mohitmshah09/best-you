@@ -1,0 +1,31 @@
+ion-header{
+    background: var(--form-title-color);
+    ion-toolbar{
+        --background: var(--form-title-color);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        ion-title{
+            font-size: 18px;
+            padding-left: 0px;
+        }
+        ion-back-button{
+            --icon-font-size: 23px;
+        }
+        .svae-btn{
+            font-family: 'Mulish', sans-serif;
+            padding-right: 13px;
+        }
+    }
+}
+
+ion-content{
+    --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
+
+    ion-input{
+        margin-left: 0 !important;
+        width: 100% !important;
+        font-weight: bold;
+    }
+   
+}

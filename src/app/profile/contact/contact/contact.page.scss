@@ -2,4 +2,34 @@ ion-content{
     --background: #FAFAFA;
     font-family: 'Mulish', sans-serif;
     --padding-bottom: 180px;
+    
+    .title-sec{
+        display: flex;
+        align-items: center;
+        .title{
+            color: var(--form-title-color);
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .edit-txt{
+            color: #008EE8;
+            outline: none;
+        }
+    }
+    .single-card{
+        box-shadow: 0px 1px 8px #00000029;
+        background:white;
+        border-radius: 10px;
+        padding: 10px;
+        // display: flex;
+        // align-items: center;
+        ion-icon{
+            font-size: 37px;
+            // margin-right: 13px;
+        }
+        p{
+            color: #4B4C5E;
+            font-size: 20px;
+        }
+    }
 }

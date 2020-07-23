@@ -34,6 +34,10 @@ import { RouterModule } from '@angular/router';
         path: 'edit-intrest',
         loadChildren: () => import('../profile/edit-intrest/edit-intrest.module').then( m => m.EditIntrestPageModule)
       },
+      {
+        path: 'edit-contact',
+        loadChildren: () => import('../profile/contact/edit-contact/edit-contact.module').then( m => m.EditContactPageModule)
+      }
     ])
   ]
 })

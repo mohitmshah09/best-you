@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>editIntrest</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Edit Interests</ion-title>
+      <span slot="end" class="svae-btn" (click)="save()">Save</span>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="edit-form">
+    <div class="p-3 pt-4 detail-section">
+      <div>
+        <div class="title-sec px-3">
+          <img src="assets/images/profession.png" class="mr-2 intrest-icon">
+          <span>In my spare time I like to…</span>
+        </div>
+        <ion-textarea class=" content-txt" type="text"
+          value="Listen to audiobooks, Attend live events, Read, Watch Television" rows="2"></ion-textarea>
+      </div>
+    </div>
+  </div>
 </ion-content>

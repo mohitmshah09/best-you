@@ -173,6 +173,22 @@
 			font-family: 'Mulish', sans-serif;
 			
 		}
+		ion-input{
+			border-bottom: 2px solid #D2D2D6;
+			margin-left: 37px;
+			padding-left: 0 !important;
+			--padding-top: 5px;
+			--padding-bottom: 8px;
+			--padding-start: 0px;
+			margin-right: 60px;
+			width: 88%;
+		}
+		.intrest-icon{
+            height: 19px;
+            width: 19px;
+            margin-top: -5px;
+            margin-left: -4px;
+        }
 	}
 }
 // Edir profile detail end here

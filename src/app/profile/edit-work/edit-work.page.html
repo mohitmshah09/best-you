@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>editWork</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Edit Work</ion-title>
+    <span slot="end" class="svae-btn" (click)="save()">Save</span>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="edit-form">
+    <div class="p-3 pt-4 detail-section">
+      <div>
+        <div class="title-sec px-3" style="align-items: unset;">
+          <i class="fa fa-building mr-2" aria-hidden="true"></i>
+          <span>Profession</span>
+        </div>
+        <ion-input class=" content-txt" type="text" value="Business Owner"></ion-input>
+      </div>
+    </div>
+  </div>
 </ion-content>

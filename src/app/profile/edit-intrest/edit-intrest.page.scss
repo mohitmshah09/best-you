@@ -1,0 +1,40 @@
+ion-header{
+    background: var(--form-title-color);
+    ion-toolbar{
+        --background: var(--form-title-color);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        ion-title{
+            font-size: 18px;
+            padding-left: 0px;
+        }
+        ion-back-button{
+            --icon-font-size: 23px;
+        }
+        .svae-btn{
+            font-family: 'Mulish', sans-serif;
+            padding-right: 13px;
+        }
+    }
+}
+
+ion-content{
+    --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
+    ion-textarea{
+        border-bottom: 2px solid #D2D2D6;
+        margin-left: 37px;
+        padding-left: 0 !important;
+        --padding-top: 5px;
+        --padding-bottom: 8px;
+        --padding-start: 0px;
+        margin-right: 60px;
+        width: 88%;
+    }
+    .title-sec{
+        img{
+            margin-left: -9px !important;
+            margin-top: unset !important;
+        }
+    }
+}

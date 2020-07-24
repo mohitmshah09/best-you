@@ -37,7 +37,27 @@ import { RouterModule } from '@angular/router';
       {
         path: 'edit-contact',
         loadChildren: () => import('../profile/contact/edit-contact/edit-contact.module').then( m => m.EditContactPageModule)
-      }
+      },
+      {
+        path: 'courses-list',
+        loadChildren: () => import('../profile/courses/courses-list/courses-list.module').then( m => m.CoursesListPageModule)
+      },
+      {
+        path: 'courses-detail',
+        loadChildren: () => import('../profile/courses/courses-detail/courses-detail.module').then( m => m.CoursesDetailPageModule)
+      },
+      {
+        path: 'other-user-profile',
+        loadChildren: () => import('../profile/other-user-profile/other-user-profile.module').then( m => m.OtherUserProfilePageModule)
+      },
+      {
+        path: 'change-password',
+        loadChildren: () => import('../profile/change-password/change-password.module').then( m => m.ChangePasswordPageModule)
+      },
+      {
+        path: 'edit-profile',
+        loadChildren: () => import('../profile/edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+      },
     ])
   ]
 })

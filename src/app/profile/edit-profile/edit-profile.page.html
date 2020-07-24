@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="edit-form">
+    <div>
+      <div class="profile-sec">
+        <div class="profile-img">
+          <img src="assets/images/profile.png">
+        </div>
+        <span (click)="files1.click()"><img src="assets/images/pencil.svg">
+        </span>
+        <input type="file" hidden #files1 (change)="selectFile($event)" accept="image/*">
+      </div>
+    </div>
+    <form>
+      <div class="p-3 pt-4 detail-section">
+        <div class="mb-3">
+          <div class="title-sec">
+            <span>First Name</span>
+          </div>
+          <ion-input class="content-txt" type="text" value="John"></ion-input>
+        </div>
+
+        <div class="mb-3">
+          <div class="title-sec">
+            <span>Last Name</span>
+          </div>
+          <ion-input class="content-txt" type="text" value="Smith"></ion-input>
+        </div>
+
+        <div class="mb-3">
+          <div class="title-sec">
+            <span>Email Address</span>
+          </div>
+          <ion-input class="content-txt" type="text" value="john.smith@gmail.com"></ion-input>
+        </div>
+
+        <div class="mb-3">
+          <div class="title-sec">
+            <span>Phone</span>
+          </div>
+          <ion-input class="content-txt" type="text" value="+1(000)000-0000"></ion-input>
+        </div>
+
+        
+      </div>
+    </form>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="buttons">
+    <ion-button expand="block">Save</ion-button>
+  </div>
+</ion-footer>

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { Router, NavigationExtras } from '@angular/router';
-declare const $: any;
+
 @Component({
   selector: 'app-verification-code',
   templateUrl: './verification-code.page.html',

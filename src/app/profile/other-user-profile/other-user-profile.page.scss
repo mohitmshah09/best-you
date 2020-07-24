@@ -1,0 +1,113 @@
+.header-sec {
+    background: var(--form-title-color);
+    color: white;
+    margin-top: -8px;
+    padding: 17px 10px 30px;
+    .profile-sec{
+        margin-top: -25px;
+        .profile-img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 14px;
+            margin: auto;
+            img {
+                max-height: 100%;
+                min-height: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .name {
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .position-title{
+        font-family: 'Mulish', sans-serif;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .icon-sec{
+        font-size: 23px;
+        margin-left: auto;
+        display: table;
+        .bell-icon{
+            height: 24px;
+            width: 35px;
+            margin: -11px 9px 0 0;
+        } 
+    }
+    .button-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .insta-icon{
+            background: #555769;
+            color: var(--button-color);
+            padding: 0 8px;
+            border-radius: 6px;
+            font-size: 27px;
+            ion-icon{
+                margin-bottom: -3px;
+            }
+        }
+        .reader-icon{
+            height: 26px;
+            margin-bottom: 6px;
+        }
+    }
+    ion-button{
+        text-transform: capitalize !important;
+    }
+    .hide{display:none;}
+   
+}
+ion-content {
+    --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
+    .detail-section{
+        .title-sec{
+            display: flex;
+            align-items: center;
+            .title{
+                color: var(--form-title-color);
+                font-weight: 600;
+                font-size: 20px;
+            }
+            span{
+                color: #777885;
+                font-size: 13px;
+            }
+            ion-icon,i{
+                color: var(--form-title-color);
+            }
+        }
+        .content-txt{
+            color: var(--form-title-color);
+            padding: 4px 10px 10px 40px;
+            font-size: 16px;
+        }
+        .work{
+            margin-left: 40px;
+            padding-left: 0 !important;
+            border-bottom: 2px solid #D2D2D6;
+        }
+        .intrest-icon{
+            height: 19px;
+            width: 19px;
+            margin-top: -5px;
+            margin-left: -4px;
+        }
+    }
+}
+
+

@@ -132,6 +132,7 @@
 		--background:var(--button-color);
 		--box-shadow: none;
 		--border-radius: 6px;
+		font-family: 'Mulish', sans-serif;
 	}
 }
 
@@ -192,3 +193,37 @@
 	}
 }
 // Edir profile detail end here
+
+
+.popover-body{
+    padding: 8px 0 !important;
+}
+.dropdown-item {
+    padding:15px 18px 0px !important;
+    font-size: 18px !important;
+    color: #777885 !important;
+    /* color: #1070EA; */
+    font-weight: bold !important;
+    font-family: 'Mulish', sans-serif !important;
+    display: flex !important;
+	align-items: center !important;
+	outline: none !important;
+	background-color: unset !important;
+    img{
+		height: 28px !important;
+		margin-right: 10px !important;
+    }
+}
+.dropdown-item:active{
+	background: unset !important;
+}
+.edit-profile-list{
+    background: #F2F8FE !important;
+    color: #1070EA !important;
+	font-weight: bold !important;
+	padding: 15px 18px !important;
+    i{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}

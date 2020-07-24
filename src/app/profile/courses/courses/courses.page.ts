@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesPage implements OnInit {
 
+  isSearchBarVisible: Boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleSearchBar() {
+    this.isSearchBarVisible = !this.isSearchBarVisible
+    // this.isSearchBarVisible = true;
+  }
 }

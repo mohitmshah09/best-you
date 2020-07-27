@@ -2,16 +2,9 @@
   <div class="header-sec">
     <div class="icon-sec">
       <span><img src="assets/images/bell.svg" class="bell-icon"></span>
-      <span>
-        <ion-icon name="ellipsis-vertical" data-toggle="popover" data-container="body" data-placement="bottom" data-html="true" data-popover-content="test"></ion-icon>
+      <span (click)="presentPopover()">
+        <ion-icon name="ellipsis-vertical" ></ion-icon>
       </span>
-      <div id="popover-content-test" class="hide">
-        <ul class="px-0">
-          <li class="dropdown-item edit-profile-list" id="edit-profile-btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-            Edit profile</li>
-          <li class="dropdown-item" id="change-psw-btn" ><img src="assets/images/padlock.png">Change password</li>
-        </ul>
-      </div>
     </div>
     <div class="text-center profile-sec">
       <div class="profile-img mt-2">
@@ -20,16 +13,19 @@
       <p class="mb-0 name">John Alexandre</p>
       <p class="position-title">Marketing Director</p>
       <div class="button-section">
-        <div class="buttons">
+        <div class="buttons" (click)="openModal()" *ngIf="isDisplay">
           <ion-button>Connect</ion-button>
+        </div>
+        <div class="buttons" *ngIf="!isDisplay">
+          <ion-button>Disconnect</ion-button>
         </div>
         <div class="insta-icon mx-1">
           <ion-icon name="logo-instagram"></ion-icon>
         </div>
-        <div class="insta-icon mx-1">
+        <div class="insta-icon mx-1"  routerLink="/home/profile/courses-list">
           <img src="assets/images/book.png " class="reader-icon">
         </div>
-        <div class="insta-icon mx-1">
+        <div class="insta-icon mx-1"  *ngIf="isDisplay">
           <img src="assets/images/globe1.png" class="reader-icon">
         </div>
       </div>
@@ -99,5 +95,17 @@
     </div>
 
   </div>
-
+<!-- confirmation modal  -->
+<div class="modal_content_with_overlay" (click)="closeModal()" [ngStyle]="{'display': isOpen?'block':'none'}">
+  <div class="modal_body">
+    <div class="modal_content">
+      <ion-icon name="close-outline" class="close-icon" (click)="closeModal()"></ion-icon>
+      <p class="msg-txt">Please confirm you would like to add John Alexandre</p>
+      <div class="modal-button">
+        <ion-button  fill="outline" class="cancle-butn">Cancel</ion-button>
+        <ion-button  fill="outline" class="confirm-btn" (click)="changeButton()">Confirm</ion-button>
+      </div>
+    </div>
+  </div>
+</div>
 </ion-content>

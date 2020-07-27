@@ -15,33 +15,37 @@
         </div>
         <span (click)="files1.click()"><img src="assets/images/pencil.svg">
         </span>
+        
         <input type="file" hidden #files1 (change)="selectFile($event)" accept="image/*">
       </div>
     </div>
     <form>
       <div class="p-3 pt-4 detail-section">
-        <div class="mb-3">
+        <div class="mb-3 main-input-sec">
           <div class="title-sec">
             <span>First Name</span>
           </div>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           <ion-input class="content-txt" type="text" value="John"></ion-input>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 main-input-sec">
           <div class="title-sec">
             <span>Last Name</span>
           </div>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           <ion-input class="content-txt" type="text" value="Smith"></ion-input>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 main-input-sec">
           <div class="title-sec">
             <span>Email Address</span>
           </div>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           <ion-input class="content-txt" type="text" value="john.smith@gmail.com"></ion-input>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 main-input-sec">
           <div class="title-sec">
             <span>Phone</span>
           </div>

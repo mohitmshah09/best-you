@@ -1,0 +1,26 @@
+.popover-list{
+    ion-item{
+        --padding-top: 7px; 
+        --padding-bottom: 7px;
+        --border-color: transparent;
+        font-weight: bold !important;
+        font-family: 'Mulish', sans-serif !important;
+        display: flex !important;
+        align-items: center !important;
+        outline: none !important;
+        font-size: 18px !important;
+        color: #777885 !important;  
+        img{
+            height: 28px !important;
+            margin-right: 10px !important;
+        }   
+    }
+    .edit-profile-list{
+        --background: #F2F8FE !important;
+        color: #1070EA !important;
+        i{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    }
+}

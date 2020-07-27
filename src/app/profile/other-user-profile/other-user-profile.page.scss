@@ -56,6 +56,7 @@
             padding: 0 8px;
             border-radius: 6px;
             font-size: 27px;
+            outline: none;
             ion-icon{
                 margin-bottom: -3px;
             }
@@ -69,7 +70,7 @@
         text-transform: capitalize !important;
     }
     .hide{display:none;}
-   
+    
 }
 ion-content {
     --background: #FAFAFA;
@@ -106,8 +107,37 @@ ion-content {
             width: 19px;
             margin-top: -5px;
             margin-left: -4px;
+           
         }
     }
 }
 
-
+.modal_content_with_overlay{
+    .msg-txt{
+        font-weight: bold;
+        font-size: 17px;
+        font-size: 20px;
+        padding-right: 10px;
+        margin-top: 0 !important;
+    }
+    .modal-button{
+        text-align: center;
+        ion-button{
+            height: 46px;
+            font-weight: bold;
+            font-family: 'Mulish', sans-serif !important;
+          
+        }
+        .confirm-btn{
+            --border-color:#00C799;
+            color: var(--button-color);
+            margin-left: 6px;
+        }
+        .cancle-butn{
+            color: #4B4C5E;
+            --border-color: #777885;
+            margin-right: 6px;
+            
+        }
+    }
+}

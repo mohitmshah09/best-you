@@ -185,45 +185,68 @@
 			width: 88%;
 		}
 		.intrest-icon{
-            height: 19px;
-            width: 19px;
-            margin-top: -5px;
-            margin-left: -4px;
-        }
+			height: 19px;
+			width: 19px;
+			margin-top: -5px;
+			margin-left: -4px;
+		}
 	}
 }
 // Edir profile detail end here
 
+.popover-content{
+	top: 35px !important;
+	right: 15px !important;
+	left: unset !important;
+	transform-origin: right top !important;
+}
 
-.popover-body{
-    padding: 8px 0 !important;
+// all modal css start here
+.modal_content_with_overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(30, 32, 54, 0.5);
+	display: flex;
+	overflow: auto;
+	z-index: 999;
 }
-.dropdown-item {
-    padding:15px 18px 0px !important;
-    font-size: 18px !important;
-    color: #777885 !important;
-    /* color: #1070EA; */
-    font-weight: bold !important;
-    font-family: 'Mulish', sans-serif !important;
-    display: flex !important;
-	align-items: center !important;
-	outline: none !important;
-	background-color: unset !important;
-    img{
-		height: 28px !important;
-		margin-right: 10px !important;
-    }
+
+.modal_body {
+	margin: auto;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 8px;
+	width: 79vw;
+	max-height: 31vh;
+	overflow: scroll;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	.modal_content {
+		padding: 8px 6px 0px 20px;
+		.succes-img{
+			height: 64px;
+			margin: auto;
+			display: block;
+		}
+		.close-icon{
+			font-size: 36px;
+			color: #A5A6AF;
+			margin-left: auto;
+			display: flex;
+		}
+		.msg-txt{
+			text-align: center;
+			color: var(--form-title-color);
+			font-family: 'Mulish', sans-serif !important;
+			margin-top: 15px;
+		}
+	}
 }
-.dropdown-item:active{
-	background: unset !important;
-}
-.edit-profile-list{
-    background: #F2F8FE !important;
-    color: #1070EA !important;
-	font-weight: bold !important;
-	padding: 15px 18px !important;
-    i{
-        font-size: 25px;
-        margin-right: 10px;
-    }
-}
+
+// all modal css end here

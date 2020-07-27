@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-declare const $: any;
+import { PopoverController } from '@ionic/angular';
+import {PopOverComponent} from '../../shared/pop-over/pop-over.component';
 
 @Component({
   selector: 'app-other-user-profile',
@@ -8,38 +9,37 @@ declare const $: any;
   styleUrls: ['./other-user-profile.page.scss'],
 })
 export class OtherUserProfilePage implements OnInit {
-
+  isOpen: Boolean = false;
+  isDisplay: Boolean = true;
   constructor(
-    public navCtrl: NavController
+    public navCtrl: NavController,
+    public popoverController: PopoverController
   ) { }
 
   ngOnInit() {
-    $("[data-toggle=popover][data-container=body]").each(function (i, obj) {
+  }
 
-      $(this).popover({
-        html: true,
-        //trigger: 'focus', //  close on click elsewhere
-        //PROBLEM: clicking button again doesn't close.
-        content: function () {
-          var id = $(this).attr('data-popover-content')
-          return $('#popover-content-' + id).html();
-        }
-      });
-
-    });
-    $(document).on('click', '#edit-profile-btn', () => {
-      this.navCtrl.navigateForward('/home/profile/edit-profile');
-      $('[data-toggle="popover"]').popover('hide');
-    });
-    $(document).on('click', '#change-psw-btn', () => {
-      this.navCtrl.navigateForward('/home/profile/change-password');
-      $('[data-toggle="popover"]').popover('hide');
-    });
-
+  openModal() {
+    this.isOpen = true;
   }
 
 
-  fun() {
-    console.log("clicked")
+  closeModal() {
+    this.isOpen = false;
+  }
+
+  changeButton() {
+    console.log("change button");
+    this.isDisplay = false;
+  }
+
+  async presentPopover(ev: any) {
+    const popover = await this.popoverController.create({
+      component: PopOverComponent,
+      cssClass: 'my-custom-class',
+      event: ev,
+      translucent: true
+    });
+    return await popover.present();
   }
 }

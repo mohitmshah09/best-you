@@ -1,4 +1,6 @@
-<ion-content>
+
+
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
   <div style="display: none;">
     <div class="no-data">
       <img src="assets/images/no-profile.png">

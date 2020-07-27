@@ -17,4 +17,6 @@ export class CoursesPage implements OnInit {
     this.isSearchBarVisible = !this.isSearchBarVisible
     // this.isSearchBarVisible = true;
   }
+  onScroll(e){
+  }
 }

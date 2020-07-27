@@ -12,4 +12,6 @@ export class ProfileDetailPage implements OnInit {
   ngOnInit() {
   }
 
+  onScroll(e){
+  }
 }

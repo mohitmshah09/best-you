@@ -1,33 +1,119 @@
-.header-sec {
+ion-content{
+    .header-sec {
+        background: var(--form-title-color);
+        color: white;
+        margin-top: -8px;
+        padding: 17px 10px 30px;
+        .profile-sec{
+            margin-top: -25px;
+            .profile-img {
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-left: 14px;
+                margin: auto;
+                img {
+                    max-height: 100%;
+                    min-height: 100%;
+                    min-width: 100%;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .name {
+            font-size: 17px;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .position-title{
+            font-family: 'Mulish', sans-serif;
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .icon-sec{
+            font-size: 23px;
+            margin-left: auto;
+            display: table;
+            .bell-icon{
+                height: 24px;
+                width: 35px;
+                margin: -11px 9px 0 0;
+            }
+            
+        }
+    }
+}
+
+.header-sec1 {
+    display: flex;
+    align-items: center;
     background: var(--form-title-color);
     color: white;
-    margin-top: -8px;
-    padding: 17px 10px 30px;
+    height: 132px;
+    padding-bottom: 32px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
     .profile-sec{
-        margin-top: -25px;
-        .profile-img {
-            height: 60px;
-            width: 60px;
+        position: relative;
+        padding: 1px;
+    }
+    .profile-img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 14px;
+        
+        &::before {
+            content: "";
+            background: white;
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            left: 2px;
+            top: 35%;
             border-radius: 50%;
-            overflow: hidden;
-            margin-left: 14px;
-            margin: auto;
-            img {
-                max-height: 100%;
-                min-height: 100%;
-                min-width: 100%;
-                max-width: 100%;
-                object-fit: cover;
-            }
+            z-index: 11;
+            border: 5px solid var(--form-title-color);
+            
+        }
+        &::after {
+            content: "";
+            border: 2px solid white;
+            right: -4px;
+            position: absolute;
+            left: 10px;
+            border-radius: 50%;
+            top: 4px;
+            bottom: -4px;
+        }
+        img {
+            max-height: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            object-fit: cover;
         }
     }
     .name {
-        font-size: 17px;
+        font-size: 23px;
         font-family: 'Poppins', sans-serif;
-        margin-top: 5px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        margin-top: 6px;
+        @media only screen and (max-width: 360px) {
+            font-size: 20px;
+        }
+        @media only screen and (max-width: 359px) {
+            font-size: 19px;
+        }
     }
     .position-title{
         font-family: 'Mulish', sans-serif;
@@ -40,15 +126,26 @@
         font-size: 23px;
         margin-left: auto;
         display: table;
+        margin-top: -50px;
+        margin-right: 10px;
         .bell-icon{
             height: 24px;
             width: 35px;
             margin: -11px 9px 0 0;
         }
-        
+      
     }
+    
 }
-
+.notification-indicator{
+    background: var(--error-color);
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    border-radius: 50%;
+    left: 8px;
+    top: 1px;
+}
 ion-tabs{
     margin-top: 180px;
     ion-tab-bar{

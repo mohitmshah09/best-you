@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { EventPage } from './event.page';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 
 import { EventPageRoutingModule } from './event-routing.module';
 
@@ -13,7 +12,6 @@ import { EventPageRoutingModule } from './event-routing.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
     EventPageRoutingModule
   ],
   declarations: [EventPage]

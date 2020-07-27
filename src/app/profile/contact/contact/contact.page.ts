@@ -11,5 +11,6 @@ export class ContactPage implements OnInit {
 
   ngOnInit() {
   }
-
+  onScroll(e){
+  }
 }

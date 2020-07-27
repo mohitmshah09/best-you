@@ -81,7 +81,6 @@ export class ChangePasswordPage implements OnInit {
    * Next screen
    */
   next(data) {
-    this.isOpen = true;
     const message = document.getElementById('message');
     console.log("-------------------------")
     this.submitted = true;
@@ -97,6 +96,7 @@ export class ChangePasswordPage implements OnInit {
       message.innerHTML = "";
     }
     console.log("data", data);
+    this.isOpen = true;
  
 
   }

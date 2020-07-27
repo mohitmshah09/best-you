@@ -44,10 +44,10 @@ ion-header{
         &::before {
             content: "";
             background: var(--button-color);
-            height: 13px;
-            width: 13px;
+            height: 6px;
+            width: 6px;
             position: absolute;
-            left: 30px;
+            left: 29px;
             top: 35%;
             border-radius: 50%;
             z-index: 11;
@@ -74,13 +74,13 @@ ion-header{
     
     span {
         height: 30px;
-        width: 31px;
+        width: 30px;
         border-radius: 50%;
         text-align: center;
         font-size: 5px;
         color: white;
         background: var(--button-color);
-        line-height: 28px;
+        line-height: 36px;
         position: absolute;
         bottom: 5px;
         right: 31px;

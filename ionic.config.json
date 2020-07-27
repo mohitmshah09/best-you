@@ -1,5 +1,7 @@
 {
   "name": "best-you",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

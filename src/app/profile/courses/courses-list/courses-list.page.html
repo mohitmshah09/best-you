@@ -1,59 +1,26 @@
 <ion-header [translucent]="true">
   <app-header cname="COURSES"></app-header>
 </ion-header>
-
 <ion-content>
-  <div class="tab-section">
-    <ul class="nav nav-tabs" id="myTab">
-      <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#tabOne">Featured</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tabTwo">Most Popular</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tabThree">Newest</a>
-      </li>
-    </ul>
-    <div class="icon-sec">
-      <ion-icon name="funnel-outline"></ion-icon>
-      <ion-icon name="search"></ion-icon>
-    </div>
-  </div>
+  <div>
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="featured">
+        <p class="mb-0">Featured</p>
+      </ion-tab-button>
 
-  <div class="detail-section p-3">
-    <div class="tab-content " id="myTabContent">
-      <div class="tab-pane fade active show" id="tabOne">
-        <div class="single-card mb-3">
-          <ion-icon name="ellipsis-vertical" class="more-icon"></ion-icon>
-          <p class="title mb-2">
-            <ion-icon name="today-outline"></ion-icon>Rise To The Top
-          </p>
-          <p class="mb-0 sub-title">Course Category </p>
-          <p class="mb-1 sub-title1">Course Owner</p>
-          <div class="image-sec mt-2">
-            <img src="assets/images/course-detail.png">
-          </div>
-          <div class="buttons mt-3" routerLink="/home/profile/courses-detail">
-            <ion-button expand="block">Course Details</ion-button>
-          </div>
-        </div>
+      <ion-tab-button tab="most-popular">
+        <p class="mb-0" style="margin-top: 2px;">Most Popular</p>
+      </ion-tab-button>
 
-        <div class="single-card mb-3">
-          <ion-icon name="ellipsis-vertical" class="more-icon"></ion-icon>
-          <p class="title mb-2">
-            <img src="assets/images/edit-icon.png">Rise To The Top
-          </p>
-          <p class="mb-0 sub-title">Course Category </p>
-          <p class="mb-1 sub-title1">Course Owner</p>
-          <div class="image-sec mt-2">
-            <img src="assets/images/course-detail.png">
-          </div>
-          <div class="buttons mt-3"  routerLink="/home/profile/courses-detail">
-            <ion-button expand="block">Course Details</ion-button>
-          </div>
-        </div>
-      </div>
-    </div>
+      <ion-tab-button tab="newest">
+        <p class="mb-0 mt-0">Newest</p>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <div class="icon-sec">
+    <ion-icon name="funnel-outline"></ion-icon>
+    <ion-icon name="search"></ion-icon>
   </div>
+</div>
 </ion-content>

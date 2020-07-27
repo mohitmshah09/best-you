@@ -2,7 +2,7 @@ ion-header{
     background: var(--form-title-color);
 }
 ion-content{
-    --background: #FAFAFA;
+    // --background: #FAFAFA;
     font-family: 'Mulish', sans-serif;
     .tab-section{
         font-family: 'Mulish', sans-serif;
@@ -48,52 +48,52 @@ ion-content{
         }
     }
     
-    .detail-section{
-        .single-card{
-            box-shadow: 0px 0px 20px #0000000D;
-            border-radius: 10px;
-            padding: 15px;
-            background: white;
+   
+    ion-tabs{
+        font-family: 'Mulish', sans-serif;
+        ion-tab-bar{
+            width: 80%;
+            border-bottom: 1px solid #dee2e6;
+        }
+        ion-tab-button{
+            color: #D2D2D6;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .tab-selected{
             color: var(--form-title-color);
-            .more-icon{
-                float: right;
-                font-size: 25px;
-                color: #777885;
-                
+            // border-bottom: 2px solid;
+            p{
+                &::after{
+                    content: "";
+                    position: absolute;
+                    background-color: var(--form-title-color);
+                    height: 3px;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                }
             }
-            .title{
-                font-weight: bold;
+            
+        }
+    }
+    .icon-sec{
+        position: absolute;
+        right: 0;
+        padding: 17px 7px;
+        padding-bottom: 8px;
+        width: 21%;
+        box-shadow: 2px 0px 3px #dee2e6;
+        @media only screen and (max-width:359px) {
+            padding-bottom: 6px;
+        }
+        ion-icon{
+            color: #D2D2D6;
+            font-size: 24px;
+            margin: 0 3px;
+            @media only screen and (max-width:359px) {
                 font-size: 21px;
-                vertical-align: middle;
-                display: flex;
-                ion-icon{
-                    color: #1270EA;
-                    font-size: 25px;
-                    margin-right: 15px;
-                }
-                img{
-                    height: 30px;
-                    margin-right: 9px;
-                }
-            }
-            .sub-title{
-                font-size: 19px;
-            }
-            .sub-title1{
-                font-weight: bold;
-                font-size: 17px;
-            }
-            .image-sec{
-                height: 155px;
-                border-radius: 10px;
-                overflow: hidden;
-                img{
-                    max-width: 100%;
-                    min-width: 100%;
-                    max-height: 100%;
-                    min-height: 100%;
-                    object-fit: cover;
-                }
+                margin: 0 1px;
             }
         }
     }

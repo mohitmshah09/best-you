@@ -4,51 +4,7 @@ ion-header{
 ion-content{
     // --background: #FAFAFA;
     font-family: 'Mulish', sans-serif;
-    .tab-section{
-        font-family: 'Mulish', sans-serif;
-        background: white;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #dee2e6;
-        padding: 8px 10px;
-        ul{
-            border: none;
-            .nav-link{
-                color: #D2D2D6;
-                padding-bottom:15px !important;
-                padding: 10px 7px;
-                @media only screen and (max-width:359px) {
-                    padding: 10px 4px;
-                }
-            }
-            .nav-link.active{
-                font-weight: bold;
-                color: var(--form-title-color);
-                border: none;
-                border-bottom: 3px solid var(--form-title-color);
-                
-            }
-            .nav-item{
-                margin-bottom: -7px !important;
-            }
-        }
-        .icon-sec{
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            ion-icon{
-                color: #D2D2D6;
-                font-size: 24px;
-                margin: 0 3px;
-                @media only screen and (max-width:359px) {
-                    font-size: 21px;
-                    margin: 0 1px;
-                }
-            }
-        }
-    }
-    
-   
+
     ion-tabs{
         font-family: 'Mulish', sans-serif;
         ion-tab-bar{
@@ -59,6 +15,9 @@ ion-content{
             color: #D2D2D6;
             font-weight: bold;
             font-size: 16px;
+            p{
+                margin-top: 0;
+            }
         }
         .tab-selected{
             color: var(--form-title-color);
@@ -81,11 +40,11 @@ ion-content{
         position: absolute;
         right: 0;
         padding: 17px 7px;
-        padding-bottom: 8px;
+        padding-bottom: 10px;
         width: 21%;
         box-shadow: 2px 0px 3px #dee2e6;
         @media only screen and (max-width:359px) {
-            padding-bottom: 6px;
+            padding-bottom: 7px;
         }
         ion-icon{
             color: #D2D2D6;

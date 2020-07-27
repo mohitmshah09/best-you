@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { PopOverComponent } from '../../shared/pop-over/pop-over.component';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +9,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input('cname') componentName: String;
-  constructor() { }
+  constructor(
+    public popoverController:PopoverController
+  ) { }
 
   ngOnInit() { }
 
+  async presentPopover(ev: any) {
+    const popover = await this.popoverController.create({
+      component: PopOverComponent,
+      cssClass: 'my-custom-class',
+      event: ev,
+      translucent: true
+    });
+    return await popover.present();
+  }
 }

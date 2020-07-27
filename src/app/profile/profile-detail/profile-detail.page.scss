@@ -24,10 +24,12 @@ ion-content {
                 color: var(--form-title-color);
                 font-weight: 600;
                 font-size: 20px;
+                margin-top: 0;
             }
             .edit-txt{
                 color: #008EE8;
                 outline: none;
+                margin-top: 0;
             }
             span{
                 color: #777885;
@@ -41,6 +43,7 @@ ion-content {
             color: var(--form-title-color);
             padding: 4px 10px 10px 40px;
             font-size: 16px;
+            margin-top: 0;
         }
         .work{
             margin-left: 40px;

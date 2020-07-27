@@ -6,8 +6,8 @@ ion-toolbar {
     ion-title {
         margin-left: -27px;
         font-family: 'Poppins', sans-serif;
-		color: #1E2036;
-		font-size: 20px;
+        color: #1E2036;
+        font-size: 20px;
     }
 }
 
@@ -16,8 +16,8 @@ ion-toolbar {
     position: relative;
     width: 175px;
     margin: auto;
-
-
+    
+    
     .profile-img {
         height: 160px;
         width: 160px;
@@ -26,14 +26,14 @@ ion-toolbar {
         margin: auto;
         margin-top: 95px;
         border: 6px solid white;
-
+        
         &::before {
             content: "";
             background: var(--button-color);
-            height: 17px;
-            width: 17px;
+            height: 8px;
+            width: 8px;
             position: absolute;
-            left: -3px;
+            left: -4px;
             top: 35%;
             border-radius: 50%;
             z-index: 11;
@@ -57,7 +57,7 @@ ion-toolbar {
             object-fit: cover;
         }
     }
-
+    
     span {
         height: 50px;
         width: 50px;
@@ -66,12 +66,12 @@ ion-toolbar {
         font-size: 20px;
         color: white;
         background: var(--button-color);
-        line-height: 40px;
+        line-height: 51px;
         position: absolute;
         bottom: 0px;
         right: 6px;
         border: 2px solid white;
-
+        
         img {
             height: 22px;
         }

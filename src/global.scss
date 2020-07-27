@@ -48,6 +48,7 @@
 .invalid-feedback{
 	display: block !important;
 	color: var(--error-color) !important;
+	font-size: 14px;
 }
 
 // landing page slider css start here
@@ -80,6 +81,7 @@
 		font-family: 'Poppins', sans-serif;
 		color: #1E2036;
 		font-size: 20px;
+		margin-top: 0;
 	}
 	form{
 		
@@ -250,3 +252,122 @@
 }
 
 // all modal css end here
+
+
+// Bootstrap classes css
+.p-3 {
+    padding: 1rem!important;
+}
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+.mt-2, .my-2 {
+    margin-top: .5rem!important;
+}
+.ml-3, .mx-3 {
+    margin-left: 1rem!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+.ml-2, .mx-2 {
+    margin-left: .5rem!important;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.mt-1, .my-1 {
+    margin-top: .25rem!important;
+}
+.m-0 {
+    margin: 0!important;
+}
+.m-auto {
+    margin: auto!important;
+}
+.p-0 {
+    padding: 0!important;
+}
+.float-right {
+    float: right!important;
+}
+.mb-1, .my-1 {
+    margin-bottom: .25rem!important;
+}
+.pl-3, .px-3 {
+    padding-left: 1rem!important;
+}
+.pr-3, .px-3 {
+    padding-right: 1rem!important;
+}
+.mr-2, .mx-2 {
+    margin-right: .5rem!important;
+}
+.ml-1, .mx-1 {
+    margin-left: .25rem!important;
+}
+.mr-1, .mx-1 {
+    margin-right: .25rem!important;
+}
+.mt-0, .my-0 {
+    margin-top: 0!important;
+}
+.h-100 {
+    height: 100%!important;
+}
+.text-white {
+    color: #fff!important;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}

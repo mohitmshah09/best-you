@@ -1,7 +1,7 @@
 ion-content{
     --background: #FAFAFA;
     font-family: 'Mulish', sans-serif;
-    --padding-bottom: 180px;
+    --padding-bottom: 198px;
     
     .title-sec{
         display: flex;
@@ -10,10 +10,12 @@ ion-content{
             color: var(--form-title-color);
             font-weight: 600;
             font-size: 20px;
+            margin-top: 0;
         }
         .edit-txt{
             color: #008EE8;
             outline: none;
+            margin-top: 0;
         }
     }
     .single-card{
@@ -30,6 +32,7 @@ ion-content{
         p{
             color: #4B4C5E;
             font-size: 17px;
+            margin-top: 4px;
         }
     }
 }

@@ -16,6 +16,9 @@ ion-header{
 }
 ion-content{
     font-family: 'Mulish', sans-serif;
+    p{
+        margin-top: 0;
+    }
     .main-title{
         color: var(--form-title-color);
         font-family: 'Poppins', sans-serif;

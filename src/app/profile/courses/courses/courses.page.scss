@@ -56,9 +56,9 @@ ion-content{
             color: var(--form-title-color);
             font-weight: 600;
             font-size: 17px;
+            margin-top: 0;
             img{
-                height: 17px;
-                margin-top: -1px;
+                height: 15px;
             }
         }
         .edit-txt{
@@ -66,6 +66,7 @@ ion-content{
             outline: none;
             font-weight: 600;
             font-size: 15px;
+            margin-top: 0;
             i{
                 color: #A5A6AF;
                 margin-right: 2px;
@@ -77,6 +78,7 @@ ion-content{
         background: white;
         border-radius: 6px;
         padding: 10px 19px;
+        margin-bottom: 10px !important;
         .img-sec{
             height: 65px;
             border-radius: 10px;
@@ -95,6 +97,8 @@ ion-content{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                margin-top: 0;
+                margin-left: 7px;
             }
             .title{
                 color: var(--form-title-color);
@@ -104,6 +108,8 @@ ion-content{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                margin-top: 0;
+                margin-left: 7px;
             }
         }
     }

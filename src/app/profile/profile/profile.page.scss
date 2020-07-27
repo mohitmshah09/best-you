@@ -76,14 +76,14 @@ ion-content{
         &::before {
             content: "";
             background: white;
-            height: 14px;
-            width: 14px;
+            height: 4px;
+            width: 4px;
             position: absolute;
-            left: 2px;
+            left: 6px;
             top: 35%;
             border-radius: 50%;
             z-index: 11;
-            border: 5px solid var(--form-title-color);
+            border: 3px solid var(--form-title-color);
             
         }
         &::after {

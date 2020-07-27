@@ -18,6 +18,7 @@ ion-content{
             font-size: 21px;
             vertical-align: middle;
             display: flex;
+            margin-top: 0;
             ion-icon{
                 color: #1270EA;
                 font-size: 25px;
@@ -29,11 +30,13 @@ ion-content{
             }
         }
         .sub-title{
-            font-size: 19px;
+            font-size: 18px;
+            margin-top: 0;
         }
         .sub-title1{
             font-weight: bold;
-            font-size: 17px;
+            font-size: 16px;
+            margin-top: 0;
         }
         .image-sec{
             height: 155px;

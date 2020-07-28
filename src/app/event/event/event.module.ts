@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { EventPage } from './event.page';
 
 import { EventPageRoutingModule } from './event-routing.module';
+import { HeaderComponent } from '../../home/header/header.component';
+
 
 @NgModule({
   imports: [
@@ -14,6 +16,9 @@ import { EventPageRoutingModule } from './event-routing.module';
     FormsModule,
     EventPageRoutingModule
   ],
-  declarations: [EventPage]
+  declarations: [
+    EventPage,
+    HeaderComponent
+  ]
 })
 export class EventPageModule {}

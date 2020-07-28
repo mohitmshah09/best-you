@@ -1,0 +1,43 @@
+<ion-content>
+  <div class="detail-section p-3">
+    <div class="single-card mb-3">
+      <ion-icon name="ellipsis-vertical" class="more-icon" (click)="presentPopover('1')"></ion-icon>
+      <div class="share-sec" id="1" style="display: none;">
+        <div>
+          <img src="assets/images/share.png">Share
+        </div>
+      </div>
+      <p class="title mb-2">
+        <ion-icon name="today-outline"></ion-icon>The Best You Expo
+      </p>
+      <p class="mb-0 sub-title">Event Date</p>
+      <p class="mb-1 sub-title1">Event Host</p>
+      <div class="image-sec mt-3">
+        <img src="assets/images/event.png">
+      </div>
+      <div class="buttons mt-3" routerLink="/home/event/event-detail">
+        <ion-button expand="block">Event Details</ion-button>
+      </div>
+    </div>
+
+    <div class="single-card mb-3">
+      <ion-icon name="ellipsis-vertical" class="more-icon" (click)="presentPopover('2')"></ion-icon>
+      <div class="share-sec" id="2" style="display: none;">
+        <div>
+          <img src="assets/images/share.png">Share
+        </div>
+      </div>
+      <p class="title mb-2">
+        <img src="assets/images/edit-icon.png">The Best You Expo
+      </p>
+      <p class="mb-0 sub-title">Event Date</p>
+      <p class="mb-1 sub-title1">Event Host</p>
+      <div class="image-sec mt-3">
+        <img src="assets/images/event.png">
+      </div>
+      <div class="buttons mt-3" routerLink="/home/event/event-detail">
+        <ion-button expand="block">Event Details</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -13,7 +13,7 @@ const routes: Routes = [
       },
       {
         path: 'event',
-        loadChildren: () => import('./event/event.module').then(m => m.EventPageModule)
+        loadChildren: () => import('../event/event.module').then(m => m.EventModule)
       },
       {
         path: 'profile',
@@ -47,8 +47,10 @@ const routes: Routes = [
     path: 'notification',
     loadChildren: () => import('../Home/notification/notification.module').then( m => m.NotificationPageModule)
   },
- 
- 
+  {
+    path: 'lost-network',
+    loadChildren: () => import('../Home/lost-network/lost-network.module').then( m => m.LostNetworkPageModule)
+  }
  
 ];
 

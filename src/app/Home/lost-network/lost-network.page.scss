@@ -1,0 +1,25 @@
+ion-content{
+    --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
+    p{
+        color: var(--form-title-color);
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 85px;
+    }
+    img{
+        height: 158px;
+        margin: auto;
+        display: block;
+        margin-top: 77px;
+    }
+    .try-butn{
+        color: #1E2036;
+        --border-color: #1e2036b3;
+        margin-right: 6px;
+        text-transform: capitalize;
+        font-family: 'Mulish', sans-serif;
+        margin-top: 115px;
+        font-weight: bold;
+    }
+}

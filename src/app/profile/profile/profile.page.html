@@ -10,7 +10,7 @@
       <p class=" ml-3 mb-0 position-title">Marketing Director</p>
     </div>
     <div class="ml-auto icon-sec">
-      <span style="position: relative;"><img src="assets/images/bell.svg" class="bell-icon"><span class="notification-indicator"></span></span>
+      <span style="position: relative;" routerLink="/home/notification"><img src="assets/images/bell.svg" class="bell-icon"><span class="notification-indicator"></span></span>
       <span (click)="presentPopover()">
         <ion-icon name="ellipsis-vertical"></ion-icon>
       </span>
@@ -18,7 +18,7 @@
   </div>
   <div class="header-sec" *ngIf="!isVisible">
     <div class="icon-sec">
-      <span style="position: relative;"><img src="assets/images/bell.svg" class="bell-icon"><span class="notification-indicator"></span></span>
+      <span style="position: relative;" routerLink="/home/notification"><img src="assets/images/bell.svg" class="bell-icon"><span class="notification-indicator"></span></span>
       <span (click)="presentPopover()">
         <ion-icon name="ellipsis-vertical"></ion-icon>
       </span>

@@ -1,0 +1,105 @@
+ion-header{
+    background: var(--form-title-color);
+    ion-toolbar{
+        --background: var(--form-title-color);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        ion-title{
+            font-size: 18px;
+            padding-left: 0px;
+        }
+        ion-back-button{
+            --icon-font-size: 23px;
+        }
+        .svae-btn{
+            font-family: 'Mulish', sans-serif;
+            padding-right: 13px;
+        }
+    }
+}
+ion-content{
+    --background: #FAFAFA;
+    font-family: 'Mulish', sans-serif;
+    .title{
+        color: var(--form-title-color);
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .single-card{
+        box-shadow: 0px 0px 15px #70707019;
+        border-radius: 10px;
+        background: white;
+        padding: 15px;
+        padding-bottom: 9px;
+        .col-10{
+            position: relative;
+            p{
+                margin-top: 0;
+                color: #1070EA;
+                font-family: "Mulish", sans-serif;
+                margin-bottom: 5px;
+            }
+            .title{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .sub-title{
+                font-size: 17px;
+            }
+            .dots{
+                background:#1070EA;
+                height: 11px;
+                width: 11px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-radius: 50%;
+            }
+            .day{
+                float: right;
+                margin-top: -6px;
+                color: #4B4C5E;
+                font-size: 13px;
+            }
+        }
+        .col-2{
+            img{
+                height: 33px;
+            }
+        }
+    }
+    .earlier-card{
+        background: transparent;
+        box-shadow: none;
+        border-bottom: 1px solid #D2D2D6;
+        border-radius: 0;
+        .col-10{
+            p{
+                color: #4B4C5E;
+            }
+        }
+    }
+}
+.no-data{
+    display: flex;
+    margin-top: 50%;
+    justify-content: center;
+    img{
+        height: 90px;
+        width: 70px;
+    }
+}
+.no-data-txt{
+    color: #4B4C5E;
+    margin-top: 20px;
+}
+.shadow{
+    background: #EBEBEB;
+    width: 90px;
+    height: 15px;
+    display: flex;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+}

@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'about',
     loadChildren: () => import('../Home/about/about.module').then( m => m.AboutPageModule)
   },
+  {
+    path: 'notification',
+    loadChildren: () => import('../Home/notification/notification.module').then( m => m.NotificationPageModule)
+  },
  
  
  

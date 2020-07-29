@@ -19,13 +19,16 @@
         <p class="message-txt mt-1" *ngIf="message">{{message}}</p>
       </div>
 
-      <div class="bottom-sec">
-        <div class="buttons" (click)="next()">
-          <ion-button expand="block">Next</ion-button>
-        </div>
-        <p class="text-center mb-0 links mt-2">Resend Code
-        </p>
-      </div>
+     
     </form>
   </div>
 </ion-content>
+<ion-footer>
+  <div class="bottom-sec">
+    <div class="buttons" (click)="next()">
+      <ion-button expand="block">Next</ion-button>
+    </div>
+    <p class="text-center mb-0 links mt-2">Resend Code
+    </p>
+  </div>
+</ion-footer>

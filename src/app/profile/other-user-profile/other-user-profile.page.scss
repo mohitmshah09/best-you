@@ -58,7 +58,12 @@
             font-size: 27px;
             outline: none;
             ion-icon{
-                margin-bottom: -3px;
+                margin-bottom: -4px;
+            }
+            ion-select{
+                padding: 0;
+                margin-top: -17px;
+                width: 21px;
             }
         }
         .reader-icon{
@@ -109,7 +114,7 @@ ion-content {
             width: 19px;
             margin-top: -5px;
             margin-left: -4px;
-           
+            
         }
     }
 }
@@ -128,7 +133,7 @@ ion-content {
             height: 46px;
             font-weight: bold;
             font-family: 'Mulish', sans-serif !important;
-          
+            
         }
         .confirm-btn{
             --border-color:#00C799;

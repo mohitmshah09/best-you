@@ -106,6 +106,17 @@
 			}
 			
 		}
+		.bottom-sec{
+			position: absolute;
+			right: 20px;
+			left: 20px;
+			bottom: 20px;
+			// padding: 0 15px 15px;
+			.links{
+				color:#4B4C5E;
+				font-size: 12px;
+			}
+		}
 		.item-has-focus{
 			--highlight-background:#457CAC !important;
 		}
@@ -113,16 +124,21 @@
 			--highlight-background:transparent !important;
 		}
 		
-		.bottom-sec{
-			position: absolute;
-			right: 20px;
-			left: 20px;
-			bottom: 20px;
-			.links{
-				color:#4B4C5E;
-				font-size: 12px;
-			}
-		}
+		
+	}
+}
+.bottom-sec{
+	// position: absolute;
+	// right: 20px;
+	// left: 20px;
+	// bottom: 20px;
+	padding: 0 15px 25px;
+	.links{
+		color:#4B4C5E;
+		font-size: 12px;
+	}
+	ion-button{
+		text-transform: capitalize;
 	}
 }
 // Form css end here
@@ -223,7 +239,7 @@
 	background-color: #fff;
 	border-radius: 8px;
 	width: 79vw;
-	max-height: 31vh;
+	max-height: 196px;
 	overflow: scroll;
 	right: 0;
 	left: 0;
@@ -253,6 +269,16 @@
 
 // all modal css end here
 
+ion-action-sheet{
+	--background: #D2D2D6 !important;
+	--backdrop-opacity: -0.9 !important;
+	bottom: 58px !important;
+	button{
+		border-bottom: 0.1px solid #bfbebec9 !important;
+		font-size: 18px !important;
+		font-family: 'Mulish', sans-serif !important;
+	}
+}
 
 // Bootstrap classes css
 .p-3 {

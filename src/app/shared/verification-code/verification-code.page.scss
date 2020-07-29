@@ -12,9 +12,7 @@ ion-toolbar {
 }
 ion-content{
     font-family: 'Mulish', sans-serif;
-    .links{
-        font-size: 17px;
-    }
+  
     .top-sec{
         img{
             width: 68px;
@@ -37,5 +35,10 @@ ion-content{
     .message-txt{
         color: var(--error-color);
         font-size: 12px;
+    }
+}
+ion-footer{
+    .links{
+        font-size: 17px;
     }
 }

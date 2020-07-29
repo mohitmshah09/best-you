@@ -14,17 +14,15 @@
       <p class="phn-num">{{phnNumber}}</p>
     </div>
 
-    <div class="buttons resend-btn" (click)="verifyCode()" >
+    <div class="buttons resend-btn" (click)="verifyCode()">
       <ion-button expand="block">Resend Code</ion-button>
     </div>
-
-    <form>
-      <div class="bottom-sec" (click)="verifyCode()" >
-        <div class="buttons">
-          <ion-button expand="block">Next</ion-button>
-        </div>
-      </div>
-    </form>
   </div>
-
 </ion-content>
+<ion-footer>
+  <div class="bottom-sec" (click)="verifyCode()">
+    <div class="buttons">
+      <ion-button expand="block">Next</ion-button>
+    </div>
+  </div>
+</ion-footer>

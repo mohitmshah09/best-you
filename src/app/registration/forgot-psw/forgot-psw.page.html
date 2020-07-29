@@ -20,13 +20,16 @@
           <div *ngIf="f.phoneNumber.errors.required">Required field.</div>
         </div>
       </div>
-      <div class="bottom-sec">
-        <div class="buttons" (click)="resetPsw(forgotForm.value)">
-          <ion-button expand="block">Reset Password</ion-button>
-        </div>
-      </div>
+      
     </form>
  
   </div>
 
 </ion-content>
+<ion-footer>
+  <div class="bottom-sec">
+    <div class="buttons" (click)="resetPsw(forgotForm.value)">
+      <ion-button expand="block">Reset Password</ion-button>
+    </div>
+  </div>
+</ion-footer>

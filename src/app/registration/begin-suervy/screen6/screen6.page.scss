@@ -57,4 +57,7 @@ ion-footer{
     background-color: #FAFAFA;
     padding: 20px;
     padding-top: 0px;
+    ion-button{
+        text-transform: capitalize;
+    }
 }

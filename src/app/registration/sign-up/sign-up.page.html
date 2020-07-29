@@ -38,13 +38,16 @@
         </div>
       </div>
       <p class="text-center mt-4 message">You may receive SMS updates from The Best You and can opt out at any time.</p>
-      <div class="bottom-sec">
-        <div class="buttons" (click)="next(signUpForm.value)">
-          <ion-button expand="block">Next</ion-button>
-        </div>
-        <p class="text-center mb-0 links mt-2">Already have an account? <span style="font-weight: 600;outline: none;" routerLink="/registration/login"> Log In</span>
-        </p>
-      </div>
+    
     </form>
   </div>
 </ion-content>
+<ion-footer>
+  <div class="bottom-sec">
+    <div class="buttons" (click)="next(signUpForm.value)">
+      <ion-button expand="block">Next</ion-button>
+    </div>
+    <p class="text-center mb-0 links mt-2">Already have an account? <span style="font-weight: 600;outline: none;" routerLink="/registration/login"> Log In</span>
+    </p>
+  </div>
+</ion-footer>

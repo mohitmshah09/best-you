@@ -14,8 +14,10 @@ export class LoginPage implements OnInit {
   passwordIcon: string = 'eye-off-outline';
   wrongPhnNumberMsg: any;
   wrongPasswordMsg: any;
+  isInValidPhn:Boolean = false;
+  isInValidPsw:Boolean = false;
   constructor(
-    public navCtrl:NavController
+    public navCtrl:NavController,
   ) {
     this.loginForm = new FormGroup({
       password: new FormControl('', [Validators.required]),
@@ -54,18 +56,24 @@ export class LoginPage implements OnInit {
       console.log("in if")
       if (obj.phoneNumber != data.phoneNumber) {
         this.wrongPhnNumberMsg = "Phone Number not found";
+        this.isInValidPhn = true;
       } else {
         this.wrongPhnNumberMsg = "";
+        this.isInValidPhn = false;
       }
       if (obj.password != data.password) {
         this.wrongPasswordMsg = "Incorrect password";
+        this.isInValidPsw = true
       } else {
         this.wrongPasswordMsg = "";
+        this.isInValidPsw = false;
       }
       return
     } else {
       this.wrongPasswordMsg = "";
       this.wrongPhnNumberMsg = "";
+      this.isInValidPsw = false;
+      this.isInValidPhn = false;
     }
     console.log(data);
     this.navCtrl.navigateForward('/home/feed');
